@@ -20,8 +20,9 @@ code {
     monospace;
 }
 
-/* color palette */
+/* Constants */
 :root {
+  /* color palette */
   --base-color: #ffa500;
   --base-color2: #e28d00;
   --base-color3: #c67600;
@@ -31,4 +32,7 @@ code {
   --secondary-color2: #009cff;
   --grays: #ada7a7;
   --grays2: #d3d3cb;
+
+  /* offsets */
+  --nav-height: 90px;
 }

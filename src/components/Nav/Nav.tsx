@@ -20,7 +20,7 @@ const Nav = () => {
         </li>
       </ul>
 
-      <hr className="Nav__underline" />
+      {/* <hr className="Nav__underline" /> */}
     </div>
   );
 };

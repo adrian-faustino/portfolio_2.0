@@ -1,5 +1,16 @@
 .Nav {
   width: 100vw;
+  position: fixed;
+  top: 0;
+  height: var(--nav-height);
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.961),
+    rgba(101, 97, 97, 0.872),
+    rgba(255, 255, 255, 0.859),
+    rgba(255, 255, 255, 0.681),
+    rgba(255, 255, 255, 0.29)
+  );
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.664);
 }
 
 .Nav__links-container {
@@ -9,7 +20,7 @@
 .Nav__links-container > li {
   display: inline-block;
   list-style-type: none;
-  margin: 20px;
+  margin: 15px 20px;
   padding: 8px 19px;
 
   transition: all 0.4s;
@@ -34,8 +45,8 @@
   content: "";
 }
 
-.Nav__underline {
-  width: 50%;
+/* .Nav__underline {
+  width: 60%;
   border: 1px solid var(--grays);
   box-shadow: 0 0 2px var(--grays2);
-}
+} */
