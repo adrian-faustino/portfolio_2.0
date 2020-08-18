@@ -1,0 +1,41 @@
+.Nav {
+  width: 100vw;
+}
+
+.Nav__links-container {
+  display: contents;
+}
+
+.Nav__links-container > li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 20px;
+  padding: 8px 19px;
+
+  transition: all 0.4s;
+  background: var(--base-color4);
+
+  /* fonts */
+  color: white;
+  font-weight: bold;
+
+  border-radius: 5px;
+  box-shadow: 0 0 4px black;
+}
+
+.Nav__links-container > li:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+.Nav__links-container > li::before,
+.Nav__links-container > li::after {
+  content: "";
+}
+
+.Nav__underline {
+  width: 50%;
+  border: 1px solid var(--grays);
+  box-shadow: 0 0 2px var(--grays2);
+}
