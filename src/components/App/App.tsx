@@ -1,11 +1,16 @@
 import React from "react";
+/* Styles */
 import "./App.css";
+/* Views */
+import { HomeView, ProjectsView, SkillsView, ContactView } from "../../views";
 
 function App() {
   return (
     <div className="App">
-      test
-      <h3>tes12t</h3>
+      <HomeView />
+      <ProjectsView />
+      <SkillsView />
+      <ContactView />
     </div>
   );
 }
