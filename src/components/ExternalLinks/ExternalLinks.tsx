@@ -7,15 +7,26 @@ import { LINKED_IN_URL, GITHUB_URL, RESUME_URL } from "../../constants";
 const ExternalLinks = () => {
   return (
     <div>
-      <a href={LINKED_IN_URL} target="_tab">
-        linked in
-      </a>
-      <a href={GITHUB_URL} target="_tab">
-        github
-      </a>
-      <a href={RESUME_URL} target="_tab">
-        resume
-      </a>
+      <div className="ExternalLinks__container">
+        <a href={LINKED_IN_URL} target="_blank">
+          <img
+            src="portfolio_2.0_assets/tech_icons/linkedin-original.svg"
+            alt="linked-in-logo"
+          />
+        </a>
+        <a href={GITHUB_URL} target="_blank">
+          <img
+            src="portfolio_2.0_assets/tech_icons/github-original-wordmark.svg"
+            alt="github-logo"
+          />
+        </a>
+        <a href={RESUME_URL} target="_blank">
+          <img
+            src="portfolio_2.0_assets/tech_icons/download-resume-large.png"
+            alt="download-resume-logo"
+          />
+        </a>
+      </div>
     </div>
   );
 };

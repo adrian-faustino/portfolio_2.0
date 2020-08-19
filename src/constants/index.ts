@@ -13,4 +13,4 @@ export const ABOUT_ME_P2 =
 export const LINKED_IN_URL = "https://www.linkedin.com/in/adrianfaustino/";
 export const GITHUB_URL = "https://github.com/adrian-faustino";
 export const RESUME_URL =
-  "https://www.dropbox.com/s/s28mj0lijyz5ng9/cover_letter_ADRIAN_FAUSTINO.pdf?dl=0";
+  "https://www.dropbox.com/s/yvq7nz98rtqrdjf/resume_ADRIAN_FAUSTINO.pdf?dl=0";
