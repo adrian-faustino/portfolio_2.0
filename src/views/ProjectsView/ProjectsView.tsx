@@ -3,10 +3,12 @@ import React from "react";
 import "./ProjectsView.css";
 /* Constants */
 import { PERSONAL_PROJECTS, CLIENT_PROJECTS, IProject } from "../../constants";
+/* Subcomponents */
+import { Project } from "../../components";
 
 const ProjectsView = () => {
   const spread_projects_jsx = (projects: Array<IProject>) => {
-    return projects.map((project) => <div>{project.title}</div>);
+    return projects.map((project) => <Project project={project} />);
   };
 
   return (

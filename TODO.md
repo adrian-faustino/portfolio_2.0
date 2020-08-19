@@ -24,6 +24,10 @@
 - client
 - personal
 
+## QOP
+
+[] when user clicks another video to play, pause other videos
+
 ## Sections
 
 [] Home
