@@ -14,7 +14,7 @@ import { ExternalLinks } from "../../components";
 
 const HomeView = () => {
   return (
-    <div className="HomeView">
+    <section className="HomeView">
       <h1 className="HomeVew__full-name">{FULL_NAME}</h1>
       <h2 className="HomeView__description">{JOB_DESCRIPTION}</h2>
       <div className="HomeView__avatar-container">
@@ -26,7 +26,7 @@ const HomeView = () => {
       </div>
 
       <ExternalLinks />
-    </div>
+    </section>
   );
 };
 
