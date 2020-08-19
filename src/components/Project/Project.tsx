@@ -25,7 +25,7 @@ const Project: React.FC<ProjectProps> = (props) => {
   };
 
   return (
-    <div>
+    <div className="Project__container">
       <h3>{title}</h3>
       <p>{description}</p>
 

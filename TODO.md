@@ -24,16 +24,20 @@
 - client
 - personal
 
-## QOP
-
-[] when user clicks another video to play, pause other videos
-
 ## Sections
 
 [] Home
 [] Projects
 [] Skills
 [] Contact
+
+## QOP
+
+[] when user clicks another video to play, pause other videos
+
+# TODO
+
+[] breakpoints for browser/mobile
 
 ## Current task
 

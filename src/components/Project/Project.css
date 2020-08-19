@@ -1,0 +1,9 @@
+.Project__container {
+  width: 95%;
+  margin: 20px auto;
+  padding: 20px 0;
+  background: white;
+
+  display: grid;
+  justify-content: center;
+}
