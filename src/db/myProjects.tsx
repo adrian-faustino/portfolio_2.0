@@ -1,45 +1,24 @@
-// Make changes to portfolio info here
+// for SkillsView.tsx
 
-// HomeView.tsx
-export const FULL_NAME = "Adrian Faustino";
-export const JOB_DESCRIPTION = "Full Stack Web Developer";
-export const AVATAR_PATH = "/portfolio_2.0_assets/images/myAvatar.jpg";
-export const ABOUT_ME_P1 =
-  "Welcome to my portfolio site! I am a Toronto based web developer with a keen interest in game development and building things for the web.";
-export const ABOUT_ME_P2 =
-  "I enjoy working with TypeScript and powerful frameworks such as React. I am confident in being able to bring ideas to life with JavaScript, HTML, CSS, and love getting design pattern ideas from other languages such as Java and PHP.";
+import { IProject } from "../constants/types";
+import {
+  REACT,
+  JAVASCRIPT,
+  HTML,
+  CSS,
+  BOOTSTRAP,
+  NODE_JS,
+  MONGO_DB,
+  EXPRESS,
+  SOCKET_IO,
+  HTML5_CANVAS,
+  MERN_STACK,
+  WORDPRESS,
+  SQUARESPACE,
+} from "./myTech";
 
-// ExternalLinks.tsx
-export const LINKED_IN_URL = "https://www.linkedin.com/in/adrianfaustino/";
-export const GITHUB_URL = "https://github.com/adrian-faustino";
-export const RESUME_URL =
-  "https://www.dropbox.com/s/yvq7nz98rtqrdjf/resume_ADRIAN_FAUSTINO.pdf?dl=0";
-
-// ProjectsView.tsx
-export interface IProject {
-  title: String;
-  description: String;
-  vid_url: String;
-  tech_stack: Array<String>;
-  site_url: String;
-}
-
-// => technology string constants
-const REACT = "React";
-const JAVASCRIPT = "JavaScript";
-const HTML = "HTML";
-const CSS = "CSS";
-const BOOTSTRAP = "BOOTSTRAP";
-const NODE_JS = "NodeJS";
-const MONGO_DB = "MongoDB";
-const EXPRESS = "Express";
-const SOCKET_IO = "Socket.io";
-const HTML5_CANVAS = "HTML5 Canvas";
-const MERN_STACK = "Mern Stack";
-const WORDPRESS = "WordPress";
-const SQUARESPACE = "SquareSpace";
-
-export const drawmageddon: IProject = {
+// => personal projects
+const drawmageddon: IProject = {
   title: "Drawamgeddon",
   description: "A multiplayer multilobby web browser drawing game.",
   vid_url: "https://www.youtube.com/embed/PjMwslXvpuc",
@@ -57,7 +36,6 @@ export const drawmageddon: IProject = {
   site_url: "https://draw-mageddon.herokuapp.com/",
 };
 
-// => personal projects
 const dispatchScheduler: IProject = {
   title: "Dispatch Scheduler",
   description: "An app that helps track dispatches for truck companies.",

@@ -8,7 +8,7 @@ import {
   AVATAR_PATH,
   ABOUT_ME_P1,
   ABOUT_ME_P2,
-} from "../../constants";
+} from "../../db/myAboutMe";
 /* Subcomponents */
 import { ExternalLinks } from "../../components";
 

@@ -2,7 +2,8 @@ import React from "react";
 /* Styles */
 import "./ProjectsView.css";
 /* Constants */
-import { PERSONAL_PROJECTS, CLIENT_PROJECTS, IProject } from "../../constants";
+import { PERSONAL_PROJECTS, CLIENT_PROJECTS } from "../../db/myProjects";
+import { IProject } from "../../constants/types";
 /* Subcomponents */
 import { Project } from "../../components";
 

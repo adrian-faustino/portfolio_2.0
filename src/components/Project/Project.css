@@ -7,3 +7,8 @@
   display: grid;
   justify-content: center;
 }
+
+.Project__vid-player {
+  /* OVERRIDE: ReactPlayer */
+  width: 100% !important;
+}

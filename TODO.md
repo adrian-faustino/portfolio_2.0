@@ -1,28 +1,28 @@
 ## General Checklist
 
-[] contact infomration
+[] contact information
 
 - github
 - linkedin
 - resume pdf (dl-able)
 - email / mobile
 
-[] about section
+[x] about section
 [] tech
 [] projects
 
+[x] Projects
+
+- client
+- personal
 - record gifs:
   [x] drawmageddon
   [x] dispatch-scheduler
   [x] mint-bean app
   [x] portfolio site v1.0
   [x] tiembox-r
-
-[x] araguacu
-[x] calgary floating lanterns
-
-- client
-- personal
+  [x] araguacu
+  [x] calgary floating lanterns
 
 ## Sections
 
@@ -38,8 +38,11 @@
 # TODO
 
 [] breakpoints for browser/mobile
+[] add alt for imgs (Accessibility)
 
 ## Current task
 
-[] design wireframe
-[] home page
+[x] design wireframe
+[x] home page
+[x] display project info
+[] display tech (skills section)

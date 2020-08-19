@@ -2,7 +2,7 @@ import React from "react";
 /* Styles */
 import "./ExternalLinks.css";
 /* Constants */
-import { LINKED_IN_URL, GITHUB_URL, RESUME_URL } from "../../constants";
+import { LINKED_IN_URL, GITHUB_URL, RESUME_URL } from "../../db/myAboutMe";
 
 const ExternalLinks = () => {
   return (

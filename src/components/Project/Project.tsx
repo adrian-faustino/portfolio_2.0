@@ -2,7 +2,7 @@ import React from "react";
 /* Styles */
 import "./Project.css";
 /* Constants */
-import { IProject } from "../../constants";
+import { IProject } from "../../constants/types";
 /* npm */
 import ReactPlayer from "react-player";
 
@@ -30,7 +30,11 @@ const Project: React.FC<ProjectProps> = (props) => {
       <p>{description}</p>
 
       {/* video player */}
-      <ReactPlayer url={vid_url.toString()} config={playerConfig} />
+      <ReactPlayer
+        className="Project__vid-player"
+        url={vid_url.toString()}
+        config={playerConfig}
+      />
 
       {/* tech stack */}
       <h3>Tech:</h3>
