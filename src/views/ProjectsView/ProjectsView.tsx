@@ -5,11 +5,15 @@ import "./ProjectsView.css";
 import { PERSONAL_PROJECTS, CLIENT_PROJECTS } from "../../db/myProjects";
 import { IProject } from "../../constants/types";
 /* Subcomponents */
-import { Project } from "../../components";
+import { Project, ContentAccordion } from "../../components";
 
 const ProjectsView = () => {
   const spread_projects_jsx = (projects: Array<IProject>) => {
-    return projects.map((project) => <Project project={project} />);
+    return projects.map((project) => (
+      <ContentAccordion title={project.title}>
+        <Project project={project} />
+      </ContentAccordion>
+    ));
   };
 
   return (
