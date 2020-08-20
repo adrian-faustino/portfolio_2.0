@@ -15,7 +15,7 @@ import {
   MERN_STACK,
   WORDPRESS,
   SQUARESPACE,
-} from "./myTech";
+} from "./mySkills";
 
 // => personal projects
 const drawmageddon: IProject = {
