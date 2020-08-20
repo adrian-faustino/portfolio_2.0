@@ -1,0 +1,18 @@
+.ContactView__info-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.ContactView__info-container > div {
+  display: flex;
+  align-items: center;
+}
+
+.ContactView__info-container > div > img {
+  height: 50px;
+  width: 50px;
+  padding: 0 20px;
+}

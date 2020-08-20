@@ -14,6 +14,8 @@ const ProjectsView = () => {
 
   return (
     <section>
+      <h2>Skills</h2>
+
       <div className="ProjectsView__wrapper">
         <div className="ProjectsView__col1">
           <h3>Personal Projects</h3>

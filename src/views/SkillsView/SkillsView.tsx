@@ -17,6 +17,8 @@ const SkillsView = () => {
 
   return (
     <div>
+      <h2>Skills</h2>
+
       <div className="SkillsView__wrapper">
         <div className="SkillsView__col1">
           <h3>Front End</h3>
