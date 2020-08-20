@@ -1,6 +1,6 @@
 ## General Checklist
 
-[] contact information
+[x] contact information
 
 - github
 - linkedin
@@ -8,8 +8,7 @@
 - email / mobile
 
 [x] about section
-[] tech
-[] projects
+[x] tech
 
 [x] Projects
 
@@ -26,12 +25,12 @@
 
 ## Sections
 
-[] Home
-[] Projects
-[] Skills
-[] Contact
+[x] Home
+[x] Projects
+[x] Skills
+[x] Contact
 
-## QOP
+## QOL
 
 [] when user clicks another video to play, pause other videos
 
@@ -39,6 +38,11 @@
 
 [] breakpoints for browser/mobile
 [] add alt for imgs (Accessibility)
+[] convert projects to dropdowns (Material UI)
+[] downloaded PDF
+[] navbar on click -> go to section
+[] add imgs for tech
+[] analytics (see which links are being clicked)
 
 ## Current task
 
