@@ -37,39 +37,32 @@ const Project: React.FC<ProjectProps> = (props) => {
 
   return (
     <Card className="Project__container">
-      <CardActionArea>
-        <CardContent>
-          {/* title */}
-          <Typography gutterBottom variant="h5" component="h2">
-            {title}
-          </Typography>
+      <CardContent>
+        {/* video player */}
+        <ReactPlayer
+          className="Project__vid-player"
+          url={vid_url.toString()}
+          config={playerConfig}
+        />
 
-          {/* video player */}
-          <ReactPlayer
-            className="Project__vid-player"
-            url={vid_url.toString()}
-            config={playerConfig}
-          />
+        {/* description */}
+        <Typography variant="body2" color="textSecondary" component="p">
+          {description}
+        </Typography>
 
-          {/* description */}
-          <Typography variant="body2" color="textSecondary" component="p">
-            {description}
-          </Typography>
+        {/* tech stack */}
+        <h3>Tech:</h3>
+        <ul>
+          {tech_stack.map((tech) => (
+            <li>{tech}</li>
+          ))}
+        </ul>
 
-          {/* tech stack */}
-          <h3>Tech:</h3>
-          <ul>
-            {tech_stack.map((tech) => (
-              <li>{tech}</li>
-            ))}
-          </ul>
-
-          {/* link to site */}
-          <a href={site_url.toString()} target="_blank">
-            Visit site
-          </a>
-        </CardContent>
-      </CardActionArea>
+        {/* link to site */}
+        <a href={site_url.toString()} target="_blank">
+          Visit site
+        </a>
+      </CardContent>
     </Card>
   );
 };

@@ -12,7 +12,15 @@ import { ISkill } from "../../constants/types";
 
 const SkillsView = () => {
   const mapSkillsJSX = (skills: Array<ISkill>) => {
-    return skills.map((skill) => <div>{skill.title}</div>);
+    return skills.map((skill) => (
+      <div>
+        <span>{skill.title}</span>
+        <img
+          className="SkillsView__skill-image"
+          src={skill.img_path?.toString()}
+        />
+      </div>
+    ));
   };
 
   return (

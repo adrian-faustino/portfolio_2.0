@@ -10,19 +10,19 @@ const ExternalLinks = () => {
       <div className="ExternalLinks__container">
         <a href={LINKED_IN_URL} target="_blank">
           <img
-            src="portfolio_2.0_assets/tech_icons/linkedin-original.svg"
+            src="portfolio_2.0_assets/icons/linkedin-original.svg"
             alt="linked-in-logo"
           />
         </a>
         <a href={GITHUB_URL} target="_blank">
           <img
-            src="portfolio_2.0_assets/tech_icons/github-original-wordmark.svg"
+            src="portfolio_2.0_assets/icons/github-original-wordmark.svg"
             alt="github-logo"
           />
         </a>
         <a href={RESUME_URL} target="_blank">
           <img
-            src="portfolio_2.0_assets/tech_icons/download-resume-large.png"
+            src="portfolio_2.0_assets/icons/download-resume-large.png"
             alt="download-resume-logo"
           />
         </a>

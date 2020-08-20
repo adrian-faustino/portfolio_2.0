@@ -1,4 +1,6 @@
 import React from "react";
+/* Styles */
+import "./ContentAccordion.css";
 /* Material UI */
 import {
   Accordion,
@@ -21,7 +23,9 @@ const ContentAccordion: React.FC<IContentAccordion> = (props) => {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography>{props.title}</Typography>
+          <Typography className="ContentAccordion__title">
+            {props.title}
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>{props.children}</AccordionDetails>
       </Accordion>

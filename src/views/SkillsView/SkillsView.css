@@ -2,3 +2,9 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+
+.SkillsView__skill-image {
+  height: 50px;
+  width: 50px;
+  background: white;
+}

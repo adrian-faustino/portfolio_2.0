@@ -38,7 +38,7 @@
 
 [] breakpoints for browser/mobile
 [] add alt for imgs (Accessibility)
-[] convert projects to dropdowns (Material UI)
+[x] convert projects to dropdowns (Material UI)
 [] downloaded PDF
 [] navbar on click -> go to section
 [] add imgs for tech
