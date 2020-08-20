@@ -15,7 +15,7 @@ export const HTML5_CANVAS = "HTML5 Canvas";
 export const MERN_STACK = "Mern Stack";
 export const WORDPRESS = "WordPress";
 export const SQUARESPACE = "SquareSpace";
-
+export const MATERIAL_UI = "Material UI";
 export const REDUX = "Redux";
 export const JQUERY = "jQuery";
 export const SQL = "SQL";
@@ -145,6 +145,9 @@ const sass = {
 const git = {
   title: GIT,
 };
+const material_ui = {
+  title: MATERIAL_UI,
+};
 
 export const FRONT_END_TECH: Array<ISkill> = [
   react,
@@ -156,6 +159,7 @@ export const FRONT_END_TECH: Array<ISkill> = [
   css,
   sass,
   jquery,
+  material_ui,
   bootstrap,
 ];
 export const BACK_END_TECH: Array<ISkill> = [
