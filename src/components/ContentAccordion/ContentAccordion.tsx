@@ -16,7 +16,7 @@ interface IContentAccordion {
 
 const ContentAccordion: React.FC<IContentAccordion> = (props) => {
   return (
-    <div>
+    <div className="ContentAccordion__">
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}

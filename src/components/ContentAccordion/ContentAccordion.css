@@ -1,3 +1,7 @@
+.ContentAccordion__ {
+  margin-bottom: 12px;
+}
+
 .ContentAccordion__title {
   /* OVERRIDE: Material UI */
   font-size: 23px !important;
