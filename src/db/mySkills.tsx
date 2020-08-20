@@ -6,7 +6,7 @@ export const REACT = "React";
 export const JAVASCRIPT = "JavaScript";
 export const HTML = "HTML";
 export const CSS = "CSS";
-export const BOOTSTRAP = "BOOTSTRAP";
+export const BOOTSTRAP = "Bootstrap";
 export const NODE_JS = "NodeJS";
 export const MONGO_DB = "MongoDB";
 export const EXPRESS = "Express";
@@ -34,8 +34,10 @@ export const REACT_NATIVE = "React Native";
 export const ANGULAR_JS = "AngularJS";
 export const TYPESCRIPT = "TypeScript";
 
-export const MISC =
-  "I'm also familiar with SPA Development, RESTfulAPI, unit testing, end-to-end testing, ES6, and AJAX.";
+export const MISC = {
+  title:
+    "I'm also familiar with SPA Development, RESTfulAPI, unit testing, end-to-end testing, ES6, and AJAX.",
+};
 
 // skills
 // TODO: add img path to every obj
@@ -136,6 +138,14 @@ const express = {
   title: EXPRESS,
 };
 
+const sass = {
+  title: SASS,
+};
+
+const git = {
+  title: GIT,
+};
+
 export const FRONT_END_TECH: Array<ISkill> = [
   react,
   redux,
@@ -144,21 +154,24 @@ export const FRONT_END_TECH: Array<ISkill> = [
   html,
   html5_canvas,
   css,
+  sass,
   jquery,
   bootstrap,
 ];
 export const BACK_END_TECH: Array<ISkill> = [
   node_js,
   express,
+  java,
   sql,
+  socket_io,
   postgresql,
   mysql,
   mongo_db,
-  java,
   ruby_on_rails,
-  socket_io,
 ];
 export const MISC_SKILLS = [
+  MISC,
+  git,
   squarespace,
   wordpress,
   mocha,

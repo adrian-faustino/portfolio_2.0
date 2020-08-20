@@ -1,4 +1,6 @@
 import React from "react";
+/* Styles */
+import "./SkillsView.css";
 /* Constants */
 import {
   FRONT_END_TECH,
@@ -23,12 +25,12 @@ const SkillsView = () => {
         </div>
 
         <div className="SkillsView__col2">
-          <h3>Front End</h3>
+          <h3>Back End</h3>
           {mapSkillsJSX(BACK_END_TECH)}
         </div>
 
         <div className="SkillsView__col3">
-          <h3>Front End</h3>
+          <h3>Misc</h3>
           {mapSkillsJSX(MISC_SKILLS)}
         </div>
       </div>
