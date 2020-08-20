@@ -12,3 +12,8 @@ export const LINKED_IN_URL = "https://www.linkedin.com/in/adrianfaustino/";
 export const GITHUB_URL = "https://github.com/adrian-faustino";
 export const RESUME_URL =
   "https://www.dropbox.com/s/yvq7nz98rtqrdjf/resume_ADRIAN_FAUSTINO.pdf?dl=0";
+
+// for ContactView.tsx
+export const LOCATION = "Toronto, Canada";
+export const EMAIL = "contact.adrianfaustino@gmail.com";
+export const MOBILE_NUMBER = "(587) 969 2044";
