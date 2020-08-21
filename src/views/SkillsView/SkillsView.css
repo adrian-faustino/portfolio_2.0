@@ -24,7 +24,7 @@
   color: white;
   transition: all 0.5s;
 
-  /* uncomment for development */
+  /** uncomment below for development **/
   /* background: red; */
 }
 .SkillsView__show-on-hover:hover {
@@ -35,6 +35,7 @@
 
 .SkillsView__icon-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
