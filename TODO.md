@@ -23,7 +23,7 @@
   [x] araguacu
   [x] calgary floating lanterns
 
-  [] Stats section (homeview)
+  [x] Stats section (homeview)
 
   - current employer: Actively Searching... etc
   - current side project
@@ -55,13 +55,13 @@
 [x] add imgs for tech
 [] analytics (see which links are being clicked)
 [] contact form
-[] contact bg black? (footer)
+[x] contact bg black? (footer)
 [] section title bg white? (breaker/spacer)
 [] implement Material UI nav
-[] stats section (homeview)
+[x] stats section (homeview)
 [] add nav bar with logo
 [] icon on hover -> expand and show title
-[] mail on click mailto:adrian@gmail.com
+[x] mail on click mailto:adrian@gmail.com
 [] cartoon icon instead of real avatar
 [] contact/email form
 [] link IG
