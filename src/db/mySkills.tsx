@@ -34,10 +34,9 @@ export const REACT_NATIVE = "React Native";
 export const ANGULAR_JS = "AngularJS";
 export const TYPESCRIPT = "TypeScript";
 
-export const MISC = {
-  title:
-    "I'm also familiar with SPA Development, RESTfulAPI, unit testing, end-to-end testing, ES6, and AJAX.",
-};
+// Misc section paragraph (3rd column in SkillsView.tsx)
+export const miscParagraph =
+  "I'm also familiar with SPA Development, RESTfulAPI, unit testing, end-to-end testing, ES6, and AJAX.";
 
 // skills
 // TODO: add img path to every obj
@@ -201,7 +200,6 @@ export const BACK_END_TECH: Array<ISkill> = [
   ruby_on_rails,
 ];
 export const MISC_SKILLS = [
-  MISC,
   git,
   squarespace,
   wordpress,

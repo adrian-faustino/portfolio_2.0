@@ -1,0 +1,29 @@
+.TechIcon__skill-image {
+  height: 70px;
+  width: 70px;
+  background: white;
+}
+
+/* BEGIN: On hover, display skill label */
+.TechIcon__show-on-hover {
+  /* vertically center labels */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* brick each icon */
+  margin: 5px;
+  padding: 5px;
+
+  font-weight: 500;
+  color: white;
+  transition: all 0.5s;
+
+  /** uncomment below for development **/
+  /* background: red; */
+}
+.TechIcon__show-on-hover:hover {
+  color: black;
+  background: var(--grays);
+}
+/* END: On hover, display skill label */

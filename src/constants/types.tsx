@@ -9,5 +9,5 @@ export interface IProject {
 // todo: add img paths
 export interface ISkill {
   title: String;
-  img_path?: String;
+  img_path: String;
 }

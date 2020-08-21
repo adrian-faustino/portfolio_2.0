@@ -5,31 +5,16 @@ import "./SkillsView.css";
 import {
   FRONT_END_TECH,
   BACK_END_TECH,
-  MISC,
+  miscParagraph,
   MISC_SKILLS,
 } from "../../db/mySkills";
 import { ISkill } from "../../constants/types";
+/* Subcomponents */
+import { TechIcon } from "../../components";
 
 const SkillsView = () => {
   const mapSkillsJSX = (skills: Array<ISkill>) => {
-    return skills.map((skill) => (
-      <div className="SkillsView__show-on-hover">
-        <span className="SkillsView__skill-label">{skill.title}</span>
-        {skill.img_path && (
-          <img
-            alt={`${skill.title} logo`}
-            className="SkillsView__skill-image"
-            src={skill.img_path.toString()}
-            // add rotation animation to react logo
-            id={
-              skill.title.toLowerCase() === "react"
-                ? "rotate-icon".toString()
-                : undefined
-            }
-          />
-        )}
-      </div>
-    ));
+    return skills.map((skill) => <TechIcon skill={skill} />);
   };
 
   return (
@@ -55,6 +40,9 @@ const SkillsView = () => {
           <h3>Misc</h3>
           <div className="SkillsView__icon-container">
             {mapSkillsJSX(MISC_SKILLS)}
+
+            {/* Misc skills paragraph on 3rd column */}
+            <p>{miscParagraph}</p>
           </div>
         </div>
       </div>
