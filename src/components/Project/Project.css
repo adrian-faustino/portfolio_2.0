@@ -11,3 +11,49 @@
   /* OVERRIDE: ReactPlayer */
   width: 40vw !important;
 }
+
+.Project__tech-ul {
+  background: blue;
+  display: contents;
+  list-style-type: none;
+  display: contents;
+}
+
+.Project__tech-li {
+  background: var(--base-color);
+  font-weight: 450;
+  padding: 5px;
+}
+
+/* 3 x 3 tech grid */
+.Project__tech-grid {
+  display: grid;
+  justify-content: center;
+  grid-gap: 2px;
+  grid-template-columns: repeat(3, 1fr);
+  background: var(--secondary-color2);
+}
+
+.Project__visit-site-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  /* bg */
+  padding: 5px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 2px black;
+
+  /* text */
+  text-decoration: none;
+  color: black;
+  font-weight: 450;
+
+  transition: all 0.4s;
+}
+
+.Project__visit-site-link:hover {
+  color: white;
+  background: var(--secondary-color2);
+}

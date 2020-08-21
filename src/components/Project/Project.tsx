@@ -2,7 +2,7 @@ import React from "react";
 /* Styles */
 import "./Project.css";
 /* Constants */
-import { IProject } from "../../constants/types";
+import { IProject, ISkill } from "../../constants/types";
 /* npm */
 import ReactPlayer from "react-player";
 /* Material UI */
@@ -35,6 +35,14 @@ const Project: React.FC<ProjectProps> = (props) => {
     },
   };
 
+  const spreadTechJsx = (techs: Array<String>) => {
+    return techs.map((tech, i) => (
+      <li className="Project__tech-li" key={`${tech}-${i}`}>
+        {tech}
+      </li>
+    ));
+  };
+
   return (
     <Card className="Project__container">
       <CardContent>
@@ -51,15 +59,17 @@ const Project: React.FC<ProjectProps> = (props) => {
         </Typography>
 
         {/* tech stack */}
-        <h3>Tech:</h3>
-        <ul>
-          {tech_stack.map((tech) => (
-            <li>{tech}</li>
-          ))}
-        </ul>
+        <h3>Tech</h3>
+        <div className="Project__tech-grid">
+          <ul className="Project__tech-ul">{spreadTechJsx(tech_stack)}</ul>
+        </div>
 
         {/* link to site */}
-        <a href={site_url.toString()} target="_blank">
+        <a
+          className="Project__visit-site-link"
+          href={site_url.toString()}
+          target="_blank"
+        >
           Visit site
         </a>
       </CardContent>

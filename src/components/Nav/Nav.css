@@ -16,11 +16,11 @@
 
 .Nav__links-container {
   display: contents;
+  list-style-type: none;
 }
 
 .Nav__links-container > li {
   display: inline-block;
-  list-style-type: none;
   margin: 15px 20px;
   padding: 8px 19px;
 
