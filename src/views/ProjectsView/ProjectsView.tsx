@@ -9,8 +9,8 @@ import { Project, ContentAccordion } from "../../components";
 
 const ProjectsView = () => {
   const spread_projects_jsx = (projects: Array<IProject>) => {
-    return projects.map((project) => (
-      <ContentAccordion title={project.title}>
+    return projects.map((project, i) => (
+      <ContentAccordion key={`${project}-${i}-accordion`} title={project.title}>
         <Project project={project} />
       </ContentAccordion>
     ));

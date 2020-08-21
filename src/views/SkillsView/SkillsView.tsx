@@ -14,7 +14,9 @@ import { TechIcon } from "../../components";
 
 const SkillsView = () => {
   const mapSkillsJSX = (skills: Array<ISkill>) => {
-    return skills.map((skill) => <TechIcon skill={skill} />);
+    return skills.map((skill, i) => (
+      <TechIcon skill={skill} key={`${skill}-${i}-skill`} />
+    ));
   };
 
   return (

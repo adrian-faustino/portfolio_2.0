@@ -8,19 +8,34 @@ const ExternalLinks = () => {
   return (
     <div>
       <div className="ExternalLinks__container">
-        <a className="hover-white-bg" href={LINKED_IN_URL} target="_blank">
+        <a
+          className="hover-white-bg"
+          href={LINKED_IN_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             src="portfolio_2.0_assets/icons/linkedin-original.svg"
             alt="linked-in-logo"
           />
         </a>
-        <a className="hover-white-bg" href={GITHUB_URL} target="_blank">
+        <a
+          className="hover-white-bg"
+          href={GITHUB_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             src="portfolio_2.0_assets/icons/github-original-wordmark.svg"
             alt="github-logo"
           />
         </a>
-        <a className="hover-white-bg" href={RESUME_URL} target="_blank">
+        <a
+          className="hover-white-bg"
+          href={RESUME_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             src="portfolio_2.0_assets/icons/download-resume-large.png"
             alt="download-resume-logo"

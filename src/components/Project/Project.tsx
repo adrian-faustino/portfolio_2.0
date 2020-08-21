@@ -2,26 +2,18 @@ import React from "react";
 /* Styles */
 import "./Project.css";
 /* Constants */
-import { IProject, ISkill } from "../../constants/types";
+import { IProject } from "../../constants/types";
 /* npm */
 import ReactPlayer from "react-player";
 /* Material UI */
-import {
-  Card,
-  CardActionArea,
-  CardActions,
-  CardMedia,
-  CardContent,
-  Button,
-  Typography,
-} from "@material-ui/core";
+import { Card, CardContent, Typography } from "@material-ui/core";
 
 interface ProjectProps {
   project: IProject;
 }
 
 const Project: React.FC<ProjectProps> = (props) => {
-  const { title, description, vid_url, tech_stack, site_url } = props.project;
+  const { description, vid_url, tech_stack, site_url } = props.project;
 
   const playerConfig = {
     youtube: {
@@ -74,6 +66,7 @@ const Project: React.FC<ProjectProps> = (props) => {
           className="Project__visit-site-link"
           href={site_url.toString()}
           target="_blank"
+          rel="noopener noreferrer"
         >
           Visit site
         </a>

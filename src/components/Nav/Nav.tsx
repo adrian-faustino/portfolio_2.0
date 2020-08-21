@@ -2,19 +2,19 @@ import React from "react";
 /* Styles */
 import "./Nav.css";
 /* Material UI */
-import {
-  AppBar,
-  Toolbar,
-  IconButton,
-  Typography,
-  Button,
-} from "@material-ui/core";
-import MenuIcon from "@material-ui/icons/Menu";
+// import {
+//   AppBar,
+//   Toolbar,
+//   IconButton,
+//   Typography,
+//   Button,
+// } from "@material-ui/core";
+// import MenuIcon from "@material-ui/icons/Menu";
 
 const Nav = () => {
   return (
     <div className="Nav">
-      <ul className="Nav__links-container">
+      {/* <ul className="Nav__links-container">
         <li>
           <a>Home</a>
         </li>
@@ -27,7 +27,7 @@ const Nav = () => {
         <li>
           <a>Contact</a>
         </li>
-      </ul>
+      </ul> */}
 
       {/* <hr className="Nav__underline" /> */}
 
