@@ -50,3 +50,11 @@ code {
   text-decoration: none;
   color: inherit;
 }
+
+/* on hover effects */
+.hover-white-bg:hover {
+  transition: all 0.4s;
+}
+.hover-white-bg:hover {
+  background: white;
+}

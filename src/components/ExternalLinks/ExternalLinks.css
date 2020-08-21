@@ -5,14 +5,6 @@
   margin: 0 auto;
 }
 
-.ExternalLinks__container > a {
-  transition: all 0.4s;
-}
-
-.ExternalLinks__container > a:hover {
-  background: white;
-}
-
 .ExternalLinks__container > a > img {
   height: 40px;
   margin: 10px 8px;
