@@ -54,7 +54,12 @@ const Project: React.FC<ProjectProps> = (props) => {
         />
 
         {/* description */}
-        <Typography variant="body2" color="textSecondary" component="p">
+        <Typography
+          className="Project__description"
+          variant="body2"
+          color="textSecondary"
+          component="p"
+        >
           {description}
         </Typography>
 

@@ -4,12 +4,23 @@
   justify-content: center;
   width: 100%;
   /* OVERRIDE: Material UI */
-  background: var(--grays) !important;
+  box-shadow: none !important;
 }
 
 .Project__vid-player {
   /* OVERRIDE: ReactPlayer */
   width: 40vw !important;
+  margin-bottom: 10px;
+}
+
+.Project__description {
+  width: min-content;
+  min-width: 300px;
+
+  /* OVERRIDE: Material UI */
+  margin: 0 auto !important;
+  font-size: 18px !important;
+  font-style: italic;
 }
 
 .Project__tech-ul {
@@ -41,13 +52,13 @@
 
   /* bg */
   padding: 5px;
-  background: white;
+  background: var(--secondary-color);
   border-radius: 5px;
-  box-shadow: 0 0 2px black;
+  box-shadow: 0 0 3px black;
 
   /* text */
   text-decoration: none;
-  color: black;
+  color: rgba(0, 0, 0, 0.726);
   font-weight: 450;
 
   transition: all 0.4s;

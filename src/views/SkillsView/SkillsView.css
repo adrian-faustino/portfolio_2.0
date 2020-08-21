@@ -23,6 +23,9 @@
   font-weight: 500;
   color: white;
   transition: all 0.5s;
+
+  /* uncomment for development */
+  /* background: red; */
 }
 .SkillsView__show-on-hover:hover {
   color: black;

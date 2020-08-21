@@ -9,7 +9,7 @@ import { Nav } from "../";
 function App() {
   return (
     <div className="App">
-      <Nav />
+      {/* <Nav /> */}
 
       <HomeView />
       <ProjectsView />
