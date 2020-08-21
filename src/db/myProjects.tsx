@@ -54,7 +54,8 @@ const mintbeanApp: IProject = {
 
 const portfolio_v1: IProject = {
   title: "Portfolio v1.0",
-  description: "My first attempt at a portfolio using plain JS, HTML, CSS.",
+  description:
+    "My first attempt at a portfolio site using plain JS, HTML, CSS.",
   vid_url: "https://www.youtube.com/embed/imw17ohWppI",
   tech_stack: [JAVASCRIPT, HTML, CSS],
   site_url: "https://adrian-faustino.herokuapp.com/",
@@ -62,7 +63,7 @@ const portfolio_v1: IProject = {
 
 const timeboxR: IProject = {
   title: "Timebox-r",
-  description: "A productivty app that combines todo-lists and timeboxing.",
+  description: "A productivity app that combines todo-lists and timeboxing.",
   vid_url: "https://www.youtube.com/embed/Wfv3NJR55kY",
   tech_stack: [REACT, JAVASCRIPT, CSS, EXPRESS],
   site_url: "https://timebox-r.herokuapp.com/",
@@ -73,7 +74,7 @@ const calgaryFloatingLanterns: IProject = {
   title: "Calgary Floating Lanterns",
   description: "A non-profit organization website I built using WordPress.",
   vid_url: "https://www.youtube.com/embed/tXdaKpWALsA",
-  tech_stack: [WORDPRESS, CSS],
+  tech_stack: [WORDPRESS, HTML, CSS],
   site_url: "https://calgaryfloatinglanterns.com/",
 };
 
@@ -82,7 +83,7 @@ const araguacu: IProject = {
   description:
     "A website I made for international dance artists based in Toronto built using SquareSpace.",
   vid_url: "https://www.youtube.com/embed/GRj2ZgaHEY0",
-  tech_stack: [SQUARESPACE, CSS],
+  tech_stack: [SQUARESPACE, HTML, CSS],
   site_url: "https://www.araguacu.com/",
 };
 

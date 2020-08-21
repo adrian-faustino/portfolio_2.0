@@ -144,7 +144,7 @@ const jest: ISkill = {
 
 const storybook: ISkill = {
   title: STORYBOOK,
-  img_path: "portfolio_2.0_assets/tech_icons/css3-original.svg",
+  img_path: "portfolio_2.0_assets/tech_icons/storybook.svg",
 };
 
 const java: ISkill = {

@@ -20,6 +20,12 @@ const SkillsView = () => {
             alt={`${skill.title} logo`}
             className="SkillsView__skill-image"
             src={skill.img_path?.toString()}
+            // add rotation animation to react logo
+            id={
+              skill.title.toLowerCase() === "react"
+                ? "rotate-icon".toString()
+                : undefined
+            }
           />
         )}
       </div>
