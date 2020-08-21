@@ -3,10 +3,12 @@ import React from "react";
 import "./ContactView.css";
 /* Constants */
 import { LOCATION, EMAIL, MOBILE_NUMBER } from "../../db/myAboutMe";
+/* npm */
+import CopyToClipboard from "react-copy-to-clipboard";
 
 const ContactView = () => {
   return (
-    <div>
+    <section className="ContactView__">
       <h2>Contact</h2>
 
       <address className="ContactView__info-container">
@@ -34,15 +36,22 @@ const ContactView = () => {
         </a>
 
         {/* mobile number */}
-        <div className="hover-white-bg">
-          <img
-            src="portfolio_2.0_assets/icons/mobile_phone.png"
-            alt="mobile phone logo"
-          />
-          <span>{MOBILE_NUMBER}</span>
-        </div>
+        <CopyToClipboard text={MOBILE_NUMBER}>
+          <div className="hover-white-bg cursor-pointer ContactView__clipboard-area">
+            <img
+              src="portfolio_2.0_assets/icons/mobile_phone.png"
+              alt="mobile phone logo"
+            />
+            <span>
+              {MOBILE_NUMBER}{" "}
+              <span className="ContactView__copy-clipboard-txt">
+                Copy to clipboard
+              </span>
+            </span>
+          </div>
+        </CopyToClipboard>
       </address>
-    </div>
+    </section>
   );
 };
 

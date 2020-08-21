@@ -1,3 +1,8 @@
+.ContactView__ {
+  background: black;
+  color: var(--secondary-color);
+}
+
 .ContactView__info-container {
   display: flex;
   flex-direction: column;
@@ -6,13 +11,15 @@
   margin: 0 auto;
 }
 
+/* individual row */
 .ContactView__info-container > * {
   display: flex;
   align-items: center;
+  font-weight: 600;
 }
-
+/* ...on hover make text darker */
 .ContactView__info-container > *:hover {
-  background: white;
+  color: var(--secondary-color2);
 }
 
 .ContactView__info-container > * > img {
@@ -22,4 +29,19 @@
 
 .ContactView__info-container > * > span {
   padding: 0 10px;
+
+  /* vertically align "copy to clipboard" text */
+  display: flex;
+  align-items: center;
+}
+
+/* on hover, reveal copy to clipboard feature */
+.ContactView__copy-clipboard-txt {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.571);
+  margin-left: 20px;
+}
+.ContactView__clipboard-area:active {
+  color: white;
+  font-size: 18px;
 }

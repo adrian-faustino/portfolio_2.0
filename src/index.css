@@ -58,3 +58,8 @@ code {
 .hover-white-bg:hover {
   background: white;
 }
+
+/* cursor */
+.cursor-pointer {
+  cursor: pointer;
+}
