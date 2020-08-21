@@ -10,7 +10,7 @@ import {
   ABOUT_ME_P2,
 } from "../../db/myAboutMe";
 /* Subcomponents */
-import { ExternalLinks } from "../../components";
+import { ExternalLinks, CurrentStatus } from "../../components";
 
 const HomeView = () => {
   return (
@@ -30,6 +30,7 @@ const HomeView = () => {
       </div>
 
       <ExternalLinks />
+      <CurrentStatus />
     </section>
   );
 };
