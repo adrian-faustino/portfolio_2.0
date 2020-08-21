@@ -4,6 +4,16 @@
   background: white;
 }
 
+.TechIcon__skill-image::after {
+  content: "Test";
+  position: absolute;
+  top: 30px;
+  height: 100vh;
+  width: 30px;
+  background: red;
+  z-index: 35;
+}
+
 /* BEGIN: On hover, display skill label */
 .TechIcon__show-on-hover {
   /* vertically center labels */
@@ -24,6 +34,6 @@
 }
 .TechIcon__show-on-hover:hover {
   color: black;
-  background: var(--grays);
+  transform: scale(1.2);
 }
 /* END: On hover, display skill label */
