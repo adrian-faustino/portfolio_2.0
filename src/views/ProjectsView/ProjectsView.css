@@ -1,6 +1,8 @@
 .ProjectsView__wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.ProjectsView__wrapper > * {
+  margin: 0 1vw;
 }

@@ -2,12 +2,12 @@
   margin: 0 auto;
   display: grid;
   justify-content: center;
-  width: min-content;
+  width: 100%;
   /* OVERRIDE: Material UI */
   background: var(--grays) !important;
 }
 
 .Project__vid-player {
   /* OVERRIDE: ReactPlayer */
-  min-width: 300px !important;
+  width: 40vw !important;
 }

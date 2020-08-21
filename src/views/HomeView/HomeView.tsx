@@ -14,7 +14,7 @@ import { ExternalLinks } from "../../components";
 
 const HomeView = () => {
   return (
-    <section className="HomeView">
+    <section className="HomeView__">
       <h1 className="HomeVew__full-name">{FULL_NAME}</h1>
       <h2 className="HomeView__description">{JOB_DESCRIPTION}</h2>
       <div className="HomeView__avatar-container">

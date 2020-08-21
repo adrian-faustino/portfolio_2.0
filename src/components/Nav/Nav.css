@@ -3,14 +3,15 @@
   position: fixed;
   top: 0;
   height: var(--nav-height);
-  background: linear-gradient(
+  z-index: 30;
+  /* background: linear-gradient(
     rgba(0, 0, 0, 0.961),
     rgba(101, 97, 97, 0.872),
     rgba(255, 255, 255, 0.859),
     rgba(255, 255, 255, 0.681),
     rgba(255, 255, 255, 0.29)
   );
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.664);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.664); */
 }
 
 .Nav__links-container {
