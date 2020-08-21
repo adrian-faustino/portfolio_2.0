@@ -12,19 +12,25 @@ const ContactView = () => {
       <div className="ContactView__info-container">
         {/* location */}
         <div>
-          <img src="portfolio_2.0_assets/icons/location.png" />
+          <img
+            src="portfolio_2.0_assets/icons/location.png"
+            alt="location logo"
+          />
           <span>{LOCATION}</span>
         </div>
 
         {/* email */}
         <div>
-          <img src="portfolio_2.0_assets/icons/email.png" />
+          <img src="portfolio_2.0_assets/icons/email.png" alt="email logo" />
           <span>{EMAIL}</span>
         </div>
 
         {/* mobile number */}
         <div>
-          <img src="portfolio_2.0_assets/icons/mobile_phone.png" />
+          <img
+            src="portfolio_2.0_assets/icons/mobile_phone.png"
+            alt="mobile phone logo"
+          />
           <span>{MOBILE_NUMBER}</span>
         </div>
       </div>

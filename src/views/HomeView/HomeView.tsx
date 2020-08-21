@@ -18,7 +18,11 @@ const HomeView = () => {
       <h1 className="HomeVew__full-name">{FULL_NAME}</h1>
       <h2 className="HomeView__description">{JOB_DESCRIPTION}</h2>
       <div className="HomeView__avatar-container">
-        <img className="HomeView__avatar" src={AVATAR_PATH} />
+        <img
+          className="HomeView__avatar"
+          src={AVATAR_PATH}
+          alt="my avatar image"
+        />
       </div>
       <div className="HomeView__about-me">
         <p>{ABOUT_ME_P1}</p>
