@@ -18,7 +18,8 @@
   /* rotate react icon in skills section */
   .App-logo,
   #rotate-icon {
-    animation: App-logo-spin infinite 20s linear;
+    background: rgba(0, 0, 0, 0);
+    animation: App-logo-spin infinite 5s linear;
   }
 }
 

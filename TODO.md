@@ -23,6 +23,14 @@
   [x] araguacu
   [x] calgary floating lanterns
 
+  [] Stats section (homeview)
+
+  - current employer: Actively Searching... etc
+  - current side project
+    - git / site url
+  - currently learning: TypeScript
+  - learning next: React native.. etc (to learn list and cross off as you go?)
+
 ## Sections
 
 [x] Home
@@ -35,6 +43,7 @@
 [] when user clicks another video to play, pause other videos
 [] when user clicks email, open email? or copy to clipboard (same with phone number -> copy to clipboard)
 [] pick better font - make font sizes conistent
+[] on clicking a tech icon, bring the user to tech homepage (same with project stack)
 
 # TODO
 
@@ -49,6 +58,23 @@
 [] contact bg black? (footer)
 [] section title bg white? (breaker/spacer)
 [] implement Material UI nav
+[] stats section (homeview)
+[] add nav bar with logo
+[] icon on hover -> expand and show title
+[] mail on click mailto:adrian@gmail.com
+[] cartoon icon instead of real avatar
+[] contact/email form
+[] link IG
+[] divider between sections
+[] color code tech stack on each project
+[] dl resume
+
+## Stretch
+
+[] bg image slowly scroll up
+[] landing page -> sticky nav bar after 100vh
+[] TLDR version of site
+[] FAQ for employers.. "why do you want to work for us.. frankly etc"
 
 ## Current task
 

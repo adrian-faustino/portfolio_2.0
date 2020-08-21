@@ -40,3 +40,13 @@ code {
   /* offsets */
   --nav-height: 90px;
 }
+
+/*
+ * GENERAL
+ */
+
+/* affecting text styles/fonts */
+.text-basic {
+  text-decoration: none;
+  color: inherit;
+}

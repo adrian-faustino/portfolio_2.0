@@ -6,13 +6,20 @@
   margin: 0 auto;
 }
 
-.ContactView__info-container > div {
+.ContactView__info-container > * {
   display: flex;
   align-items: center;
 }
 
-.ContactView__info-container > div > img {
+.ContactView__info-container > *:hover {
+  background: white;
+}
+
+.ContactView__info-container > * > img {
   height: 50px;
   width: 50px;
-  padding: 0 20px;
+}
+
+.ContactView__info-container > * > span {
+  padding: 0 10px;
 }

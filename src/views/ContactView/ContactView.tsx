@@ -9,21 +9,25 @@ const ContactView = () => {
     <div>
       <h2>Contact</h2>
 
-      <div className="ContactView__info-container">
+      <address className="ContactView__info-container">
         {/* location */}
-        <div>
+        <a
+          className="text-basic"
+          href="https://www.google.com/maps/place/Toronto,+ON/@43.7181557,-79.5181423,11z/data=!3m1!4b1!4m5!3m4!1s0x89d4cb90d7c63ba5:0x323555502ab4c477!8m2!3d43.653226!4d-79.3831843"
+          target="_tab"
+        >
           <img
             src="portfolio_2.0_assets/icons/location.png"
             alt="location logo"
           />
           <span>{LOCATION}</span>
-        </div>
+        </a>
 
         {/* email */}
-        <div>
+        <a className="text-basic" href={`mailto:${EMAIL}`} target="_blank">
           <img src="portfolio_2.0_assets/icons/email.png" alt="email logo" />
           <span>{EMAIL}</span>
-        </div>
+        </a>
 
         {/* mobile number */}
         <div>
@@ -33,7 +37,7 @@ const ContactView = () => {
           />
           <span>{MOBILE_NUMBER}</span>
         </div>
-      </div>
+      </address>
     </div>
   );
 };
