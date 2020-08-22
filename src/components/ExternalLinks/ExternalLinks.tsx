@@ -7,6 +7,14 @@ import { LINKED_IN_URL, GITHUB_URL, RESUME_URL } from "../../db/myAboutMe";
 const ExternalLinks = () => {
   return (
     <div>
+      <a
+        href="https://github.com/adrian-faustino/portfolio_2.0"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        See this site's repo
+      </a>
+
       <div className="ExternalLinks__container">
         <a
           className="hover-white-bg"

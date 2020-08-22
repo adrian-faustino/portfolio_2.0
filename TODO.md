@@ -86,3 +86,4 @@
 [x] home page
 [x] display project info
 [x] display tech (skills section)
+[] link github on each project

@@ -13,7 +13,13 @@ interface ProjectProps {
 }
 
 const Project: React.FC<ProjectProps> = (props) => {
-  const { description, vid_url, tech_stack, site_url } = props.project;
+  const {
+    description,
+    vid_url,
+    tech_stack,
+    site_url,
+    github_url,
+  } = props.project;
 
   const playerConfig = {
     youtube: {
@@ -61,15 +67,33 @@ const Project: React.FC<ProjectProps> = (props) => {
           <ul className="Project__tech-ul">{spreadTechJsx(tech_stack)}</ul>
         </div>
 
-        {/* link to site */}
-        <a
-          className="Project__visit-site-link"
-          href={site_url.toString()}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Visit site
-        </a>
+        <div className="Project__links-container">
+          {/* link to site */}
+          <a
+            className="Project__visit-site-link"
+            href={site_url.toString()}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit site
+          </a>
+
+          {/* link to GitHub */}
+          {github_url && (
+            <a
+              className="Project__github-link"
+              href={github_url.toString()}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="portfolio_2.0_assets/tech_icons/github-original.svg"
+                alt="github icon"
+              />
+              Code
+            </a>
+          )}
+        </div>
       </CardContent>
     </Card>
   );

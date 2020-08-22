@@ -4,6 +4,7 @@ export interface IProject {
   vid_url: String;
   tech_stack: Array<String>;
   site_url: String;
+  github_url?: String;
 }
 
 // todo: add img paths

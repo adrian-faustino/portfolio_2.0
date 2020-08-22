@@ -35,6 +35,7 @@ const drawmageddon: IProject = {
     CSS,
   ],
   site_url: "https://draw-mageddon.herokuapp.com/",
+  github_url: "https://github.com/adrian-faustino/draw-mageddon",
 };
 
 const dispatchScheduler: IProject = {
@@ -43,6 +44,7 @@ const dispatchScheduler: IProject = {
   vid_url: "https://www.youtube.com/embed/thNQ45Q_w0g",
   tech_stack: [REACT, REDUX, JAVASCRIPT, CSS, BOOTSTRAP, EXPRESS],
   site_url: "https://dispatch-scheduler.herokuapp.com/",
+  github_url: "https://github.com/adrian-faustino/dispatch-app",
 };
 
 const mintbeanApp: IProject = {
@@ -51,6 +53,7 @@ const mintbeanApp: IProject = {
   vid_url: "https://www.youtube.com/embed/z1G0xFyx7Wo",
   tech_stack: [REACT, JAVASCRIPT, CSS, BOOTSTRAP, EXPRESS],
   site_url: "https://mintbean-app.herokuapp.com/",
+  github_url: "https://github.com/adrian-faustino/mintbean_hackathon",
 };
 
 const portfolio_v1: IProject = {
@@ -60,6 +63,7 @@ const portfolio_v1: IProject = {
   vid_url: "https://www.youtube.com/embed/imw17ohWppI",
   tech_stack: [JAVASCRIPT, HTML, CSS],
   site_url: "https://adrian-faustino.herokuapp.com/",
+  github_url: "https://github.com/adrian-faustino/portfolio-site",
 };
 
 const timeboxR: IProject = {
@@ -68,6 +72,7 @@ const timeboxR: IProject = {
   vid_url: "https://www.youtube.com/embed/Wfv3NJR55kY",
   tech_stack: [REACT, JAVASCRIPT, CSS, EXPRESS],
   site_url: "https://timebox-r.herokuapp.com/",
+  github_url: "https://github.com/adrian-faustino/time_r",
 };
 
 // => client projects
