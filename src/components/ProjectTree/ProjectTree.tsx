@@ -1,11 +1,11 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import TreeView from "@material-ui/lab/TreeView";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import TreeItem from "@material-ui/lab/TreeItem";
 /* Constants */
 import { IProject } from "../../constants/types";
+import { PERSONAL_PROJECTS, CLIENT_PROJECTS } from "../../db/myProjects";
 
 interface RenderTree {
   id: string;
@@ -14,22 +14,12 @@ interface RenderTree {
   projectObj?: IProject;
 }
 
-const useStyles = makeStyles({
-  root: {
-    height: 110,
-    flexGrow: 1,
-    maxWidth: 400,
-  },
-});
-
 interface ProjectTreeProps {
-  categories: Array<Array<IProject>>;
-  setCurrentProject: any;
+  handleChangeProject: (project: IProject) => void;
 }
 
 const RecursiveTreeView: React.FC<ProjectTreeProps> = (props) => {
-  const { categories, setCurrentProject } = props;
-  const classes = useStyles();
+  const { handleChangeProject } = props;
 
   // spread list found in myProjects.tsx
   const spreadChildren = (projects: Array<IProject>) => {
@@ -49,31 +39,28 @@ const RecursiveTreeView: React.FC<ProjectTreeProps> = (props) => {
       {
         id: "1",
         name: "Personal",
-        // spreading PERSONAL_PROJECTS arr from myProjects.tsx
-        children: spreadChildren(categories[0]),
+        children: spreadChildren(PERSONAL_PROJECTS),
       },
       {
         id: "2",
         name: "Client",
-        // spreading CLIENT_PROJECTS arr myProjects.tsx
-        children: spreadChildren(categories[1]),
+        children: spreadChildren(CLIENT_PROJECTS),
       },
     ],
   };
 
   // set clicked project to current project in ProjectView.tsx
-  const handleNodeClick = (
-    e: React.MouseEvent,
-    projectObj: IProject | undefined
-  ) => {
-    setCurrentProject(projectObj);
+  const handleNodeClick = (e: React.MouseEvent, projectObj: IProject) => {
+    handleChangeProject(projectObj);
   };
 
   const renderTree = (nodes: RenderTree) => (
     <TreeItem
-      // only add on click to outermost branch
+      // only add onClick listener to outermost branch
       onClick={
-        nodes.children ? undefined : (e) => handleNodeClick(e, nodes.projectObj)
+        nodes.children
+          ? undefined
+          : (e) => handleNodeClick(e, nodes.projectObj!)
       }
       key={nodes.id}
       nodeId={nodes.id}
@@ -87,7 +74,6 @@ const RecursiveTreeView: React.FC<ProjectTreeProps> = (props) => {
 
   return (
     <TreeView
-      className={classes.root}
       defaultCollapseIcon={<ExpandMoreIcon />}
       defaultExpandIcon={<ChevronRightIcon />}
     >
