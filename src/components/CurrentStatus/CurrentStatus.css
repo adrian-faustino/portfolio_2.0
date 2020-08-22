@@ -18,3 +18,17 @@
   background: var(--secondary-color2);
   transform: scale(1.2);
 }
+
+@media only screen and (max-width: 600px) {
+  .MuiAccordionDetails-root {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .CurrentStatus__list-item {
+    height: min-content;
+    width: max-content;
+    margin: 5px 10px;
+  }
+}
