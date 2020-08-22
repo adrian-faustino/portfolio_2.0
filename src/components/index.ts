@@ -4,4 +4,5 @@ export { default as ExternalLinks } from "./ExternalLinks/ExternalLinks";
 export { default as CurrentStatus } from "./CurrentStatus/CurrentStatus";
 export { default as Project } from "./Project/Project";
 export { default as ContentAccordion } from "./ContentAccordion/ContentAccordion";
+export { default as AccordionConstructor } from "./AccordionConstructor/AccordionConstructor";
 export { default as TechIcon } from "./TechIcon/TechIcon";
