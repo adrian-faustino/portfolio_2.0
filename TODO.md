@@ -68,6 +68,7 @@
 [] divider between sections
 [] color code tech stack on each project
 [] dl resume
+[] link github on each project
 
 ## Stretch
 
@@ -75,6 +76,7 @@
 [] landing page -> sticky nav bar after 100vh
 [] TLDR version of site
 [] FAQ for employers.. "why do you want to work for us.. frankly etc"
+[] add fade/slide animation in projects view when user selects project
 
 ## Current task
 
