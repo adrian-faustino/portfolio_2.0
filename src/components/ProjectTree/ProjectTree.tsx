@@ -52,6 +52,7 @@ const RecursiveTreeView: React.FC<ProjectTreeProps> = (props) => {
 
   // set clicked project to current project in ProjectView.tsx
   const handleNodeClick = (e: React.MouseEvent, projectObj: IProject) => {
+    e.preventDefault();
     console.log("Setting current project to", projectObj.title);
     handleChangeProject(projectObj);
   };
@@ -75,6 +76,7 @@ const RecursiveTreeView: React.FC<ProjectTreeProps> = (props) => {
 
   return (
     <TreeView
+      disableSelection={true}
       className="ProjectTree__tree-container"
       defaultCollapseIcon={<ExpandMore />}
       defaultExpandIcon={<ChevronRight />}

@@ -1,11 +1,12 @@
 .ProjectTree__tree-container {
-  position: absolute;
   min-width: 300px;
   width: 40%;
   box-shadow: 0 0 2px black;
+  height: min-content;
 
   /* OVERRIDE: Material UI */
   margin: 0 auto !important;
+  transition: all 1s;
 }
 
 .ProjectTree__tree-item {
@@ -21,4 +22,9 @@
 .ProjectTree__tree-item > * > * {
   /* OVERRIDE: Material UI */
   font-size: 20px !important;
+}
+
+/* remove current selected background bug */
+.MuiTreeItem-label {
+  background: white !important;
 }

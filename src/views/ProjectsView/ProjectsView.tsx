@@ -25,7 +25,11 @@ const ProjectsView = () => {
     <section className="ProjectsView__wrapper">
       <ProjectTree handleChangeProject={handleChangeProject} />
 
-      {currentProject.title && <Project project={currentProject} />}
+      {currentProject.title ? (
+        <Project project={currentProject} />
+      ) : (
+        <div></div>
+      )}
     </section>
   );
 };
