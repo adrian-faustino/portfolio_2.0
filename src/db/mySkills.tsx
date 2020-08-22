@@ -36,7 +36,7 @@ export const TYPESCRIPT = "TypeScript";
 
 // Misc section paragraph (3rd column in SkillsView.tsx)
 export const miscParagraph =
-  "I'm also familiar with SPA Development, RESTfulAPI, unit testing, end-to-end testing, ES6, AJAX, DRY code, CRUD operations, CMS, and am getting better at remembering an ungodly amount of acronyms.";
+  "I'm also familiar with SPA Development, RESTfulAPI, OOP, unit testing, end-to-end testing, ES6, AJAX, DRY code, CRUD operations, CMS, REGEX, BEM, JSON, and am getting pretty good at remembering an ungodly amount of acronyms.";
 
 // skills
 // TODO: add img path to every obj
