@@ -1,6 +1,5 @@
 import React from "react";
 /* Material UI */
-import { makeStyles } from "@material-ui/core/styles";
 import {
   Accordion,
   AccordionSummary,
@@ -21,21 +20,6 @@ interface AccordionConstructorProps {
 const AccordionConstructor: React.FC<AccordionConstructorProps> = (props) => {
   const { expanded, handleChange, panelName, headerName } = props;
 
-  // Accordion styles
-  // Ref docs: https://material-ui.com/components/accordion/
-  const useStyles = makeStyles((theme) => ({
-    root: {
-      width: "100%",
-      backgroundColor: "var(--secondary-color2)",
-    },
-    heading: {
-      fontSize: theme.typography.pxToRem(20),
-      fontWeight: theme.typography.fontWeightMedium,
-    },
-  }));
-
-  const classes = useStyles();
-
   return (
     <Accordion
       expanded={expanded === panelName}
@@ -46,7 +30,7 @@ const AccordionConstructor: React.FC<AccordionConstructorProps> = (props) => {
         aria-controls={`${panelName}a-content`}
         id={`${panelName}a-header`}
       >
-        <Typography className={classes.heading}>{headerName}</Typography>
+        <span className="index__title">{headerName}</span>
       </AccordionSummary>
       <AccordionDetails>{props.children}</AccordionDetails>
     </Accordion>

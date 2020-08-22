@@ -33,7 +33,7 @@ const CurrentStatus = () => {
   };
 
   return (
-    <div>
+    <div className="CurrentStatus__main-container">
       {/* Accordion row: employment status*/}
       <AccordionConstructor
         expanded={expanded}
@@ -51,7 +51,7 @@ const CurrentStatus = () => {
         panelName="panel2"
         headerName="Currently Learning"
       >
-        {spread_items_jsx(EMPLOYMENT_STATUS)}
+        {spread_items_jsx(CURRENTLY_LEARNING)}
       </AccordionConstructor>
 
       {/* Accordion row: currently reviewing */}
@@ -61,7 +61,7 @@ const CurrentStatus = () => {
         panelName="panel3"
         headerName="Currently Reviewing"
       >
-        {spread_items_jsx(EMPLOYMENT_STATUS)}
+        {spread_items_jsx(CURRENTLY_REVIEWING)}
       </AccordionConstructor>
 
       {/* Accordion row: learning next */}
@@ -71,7 +71,7 @@ const CurrentStatus = () => {
         panelName="panel4"
         headerName="Learning Next"
       >
-        {spread_items_jsx(EMPLOYMENT_STATUS)}
+        {spread_items_jsx(LEARNING_NEXT)}
       </AccordionConstructor>
     </div>
   );
