@@ -1,8 +1,7 @@
 import React from "react";
-import TreeView from "@material-ui/lab/TreeView";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import TreeItem from "@material-ui/lab/TreeItem";
+/* Material UI */
+import { TreeView, TreeItem } from "@material-ui/lab";
+import { ExpandMore, ChevronRight } from "@material-ui/icons";
 /* Constants */
 import { IProject } from "../../constants/types";
 import { PERSONAL_PROJECTS, CLIENT_PROJECTS } from "../../db/myProjects";
@@ -74,8 +73,8 @@ const RecursiveTreeView: React.FC<ProjectTreeProps> = (props) => {
 
   return (
     <TreeView
-      defaultCollapseIcon={<ExpandMoreIcon />}
-      defaultExpandIcon={<ChevronRightIcon />}
+      defaultCollapseIcon={<ExpandMore />}
+      defaultExpandIcon={<ChevronRight />}
     >
       {renderTree(data)}
     </TreeView>
