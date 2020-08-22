@@ -23,10 +23,11 @@ const useStyles = makeStyles({
 
 interface ProjectTreeProps {
   categories: Array<Array<IProject>>;
+  setCurrentProject: any;
 }
 
 const RecursiveTreeView: React.FC<ProjectTreeProps> = (props) => {
-  const { categories } = props;
+  const { categories, setCurrentProject } = props;
   const classes = useStyles();
 
   // spread list found in myProjects.tsx
@@ -58,8 +59,21 @@ const RecursiveTreeView: React.FC<ProjectTreeProps> = (props) => {
     ],
   };
 
+  // set clicked project to current project in ProjectView.tsx
+  const handleNodeClick = (e: React.MouseEvent) => {
+    const clickedProjectTitle = e.currentTarget.lastElementChild?.innerHTML;
+    console.log("Setting current project:", clickedProjectTitle);
+    setCurrentProject(clickedProjectTitle);
+  };
+
   const renderTree = (nodes: RenderTree) => (
-    <TreeItem key={nodes.id} nodeId={nodes.id} label={nodes.name}>
+    <TreeItem
+      // only add on click to outermost branch
+      onClick={nodes.children ? undefined : handleNodeClick}
+      key={nodes.id}
+      nodeId={nodes.id}
+      label={nodes.name}
+    >
       {Array.isArray(nodes.children)
         ? nodes.children.map((node) => renderTree(node))
         : null}

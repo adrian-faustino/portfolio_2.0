@@ -35,7 +35,10 @@ const ProjectsView = () => {
         </div>
       </div>
 
-      <ProjectTree categories={[PERSONAL_PROJECTS, CLIENT_PROJECTS]} />
+      <ProjectTree
+        setCurrentProject={setCurrentProejct}
+        categories={[PERSONAL_PROJECTS, CLIENT_PROJECTS]}
+      />
     </section>
   );
 };
