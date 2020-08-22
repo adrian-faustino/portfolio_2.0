@@ -20,7 +20,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 const CurrentStatus = () => {
   /* State */
-  const [expanded, setExpanded] = useState("panel1");
+  const [expanded, setExpanded] = useState<string | false>(false);
 
   // spread the list of items in myStatus.tsx db
   const spread_items_jsx = (items: Array<String>) => {
@@ -43,10 +43,20 @@ const CurrentStatus = () => {
 
   const classes = useStyles();
 
+  const handleChange = (panel: string) => (
+    event: React.ChangeEvent<{}>,
+    isExpanded: boolean
+  ) => {
+    setExpanded(isExpanded ? panel : false);
+  };
+
   return (
     <div className={classes.root}>
       {/* Accordion row: employment status*/}
-      <Accordion>
+      <Accordion
+        expanded={expanded === "panel1"}
+        onChange={handleChange("panel1")}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
