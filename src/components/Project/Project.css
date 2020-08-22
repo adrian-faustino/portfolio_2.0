@@ -2,7 +2,7 @@
   margin: 0 auto;
   display: grid;
   justify-content: center;
-  width: 100%;
+  width: max-content;
   /* OVERRIDE: Material UI */
   box-shadow: none !important;
 }

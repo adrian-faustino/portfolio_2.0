@@ -67,6 +67,7 @@ const RecursiveTreeView: React.FC<ProjectTreeProps> = (props) => {
       key={nodes.id}
       nodeId={nodes.id}
       label={nodes.name}
+      className="ProjectTree__tree-item"
     >
       {nodes.children ? nodes.children.map((node) => renderTree(node)) : null}
     </TreeItem>
@@ -74,7 +75,7 @@ const RecursiveTreeView: React.FC<ProjectTreeProps> = (props) => {
 
   return (
     <TreeView
-      className="ProjectTree__tree-title"
+      className="ProjectTree__tree-container"
       defaultCollapseIcon={<ExpandMore />}
       defaultExpandIcon={<ChevronRight />}
     >

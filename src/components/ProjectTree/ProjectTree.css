@@ -1,3 +1,24 @@
-.ProjectTree__tree-title {
-  background: red;
+.ProjectTree__tree-container {
+  position: absolute;
+  min-width: 300px;
+  width: 40%;
+  box-shadow: 0 0 2px black;
+
+  /* OVERRIDE: Material UI */
+  margin: 0 auto !important;
+}
+
+.ProjectTree__tree-item {
+  text-align: left;
+  background: white;
+  border-radius: 5px;
+
+  /* OVERRIDE: Material UI */
+  padding: 10px !important;
+}
+
+/* Tree font size */
+.ProjectTree__tree-item > * > * {
+  /* OVERRIDE: Material UI */
+  font-size: 20px !important;
 }

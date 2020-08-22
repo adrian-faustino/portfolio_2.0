@@ -22,7 +22,7 @@ const ProjectsView = () => {
   };
 
   return (
-    <section>
+    <section className="ProjectsView__wrapper">
       <ProjectTree handleChangeProject={handleChangeProject} />
 
       {currentProject.title && <Project project={currentProject} />}
