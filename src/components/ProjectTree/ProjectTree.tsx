@@ -31,9 +31,9 @@ const RecursiveTreeView: React.FC<ProjectTreeProps> = (props) => {
 
   // spread list found in myProjects.tsx
   const spreadChildren = (projects: Array<IProject>) => {
-    return projects.map((project) => {
+    return projects.map((project, i) => {
       return {
-        id: Math.random().toString(),
+        id: `${project}-${i}`,
         name: project.title.toString(),
       };
     });
