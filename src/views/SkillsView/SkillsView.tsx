@@ -44,7 +44,7 @@ const SkillsView = () => {
             {mapSkillsJSX(MISC_SKILLS)}
 
             {/* Misc skills paragraph on 3rd column */}
-            <p>{miscParagraph}</p>
+            <p className="SkillsView__misc-paragraph">{miscParagraph}</p>
           </div>
         </div>
       </div>
