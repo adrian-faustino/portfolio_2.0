@@ -4,7 +4,6 @@ import {
   Accordion,
   AccordionSummary,
   AccordionDetails,
-  Typography,
 } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
