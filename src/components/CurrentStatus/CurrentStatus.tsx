@@ -25,7 +25,9 @@ const CurrentStatus = () => {
   // spread the list of items in myStatus.tsx db
   const spread_items_jsx = (items: Array<String>) => {
     return items.map((item, i) => (
-      <span key={`${item}-${i}-status`}>{item}</span>
+      <span className="CurrentStatus__list-item" key={`${item}-${i}-status`}>
+        {item}
+      </span>
     ));
   };
 
@@ -34,6 +36,7 @@ const CurrentStatus = () => {
   const useStyles = makeStyles((theme) => ({
     root: {
       width: "100%",
+      backgroundColor: "var(--secondary-color2)",
     },
     heading: {
       fontSize: theme.typography.pxToRem(20),
@@ -43,6 +46,7 @@ const CurrentStatus = () => {
 
   const classes = useStyles();
 
+  // toggle clicked accordion title
   const handleChange = (panel: string) => (
     event: React.ChangeEvent<{}>,
     isExpanded: boolean
@@ -65,12 +69,15 @@ const CurrentStatus = () => {
           <Typography className={classes.heading}>Employment Status</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>{spread_items_jsx(EMPLOYMENT_STATUS)}</Typography>
+          {spread_items_jsx(EMPLOYMENT_STATUS)}
         </AccordionDetails>
       </Accordion>
 
       {/* Accordion row: currently learning */}
-      <Accordion>
+      <Accordion
+        expanded={expanded === "panel2"}
+        onChange={handleChange("panel2")}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -81,12 +88,15 @@ const CurrentStatus = () => {
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>{spread_items_jsx(CURRENTLY_LEARNING)}</Typography>
+          {spread_items_jsx(CURRENTLY_LEARNING)}
         </AccordionDetails>
       </Accordion>
 
       {/* Accordion row: currently reviewing */}
-      <Accordion>
+      <Accordion
+        expanded={expanded === "panel3"}
+        onChange={handleChange("panel3")}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel3a-content"
@@ -97,12 +107,15 @@ const CurrentStatus = () => {
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>{spread_items_jsx(CURRENTLY_REVIEWING)}</Typography>
+          {spread_items_jsx(CURRENTLY_REVIEWING)}
         </AccordionDetails>
       </Accordion>
 
       {/* Accordion row: learning next */}
-      <Accordion>
+      <Accordion
+        expanded={expanded === "panel4"}
+        onChange={handleChange("panel4")}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel4a-content"
@@ -110,9 +123,7 @@ const CurrentStatus = () => {
         >
           <Typography className={classes.heading}>Learning Next</Typography>
         </AccordionSummary>
-        <AccordionDetails>
-          <Typography>{spread_items_jsx(LEARNING_NEXT)}</Typography>
-        </AccordionDetails>
+        <AccordionDetails>{spread_items_jsx(LEARNING_NEXT)}</AccordionDetails>
       </Accordion>
     </div>
   );

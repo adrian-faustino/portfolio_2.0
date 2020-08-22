@@ -1,7 +1,5 @@
 // These are displayed on the landing page HomeView.tsx
-export const EMPLOYMENT_STATUS: Array<String> = [
-  "Actively searching for opportunities",
-];
+export const EMPLOYMENT_STATUS: Array<String> = ["Actively Seeking"];
 
 export const CURRENTLY_LEARNING: Array<String> = ["TypeScript"];
 

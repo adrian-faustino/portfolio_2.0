@@ -1,0 +1,16 @@
+.CurrentStatus__list-item {
+  margin-right: 15px;
+  background: var(--secondary-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px black;
+
+  transition: all 0.4s;
+}
+
+.CurrentStatus__list-item:hover {
+  cursor: pointer;
+  color: white;
+  background: var(--secondary-color2);
+  transform: scale(1.2);
+}
