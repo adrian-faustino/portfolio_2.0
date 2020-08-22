@@ -4,6 +4,13 @@
   justify-content: center;
   max-width: 628px;
   margin: 0 auto;
+  padding-top: 10px;
+}
+
+.HomeVew__full-name {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0;
 }
 
 .HomeView__avatar-container {

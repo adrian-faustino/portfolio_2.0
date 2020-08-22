@@ -1,8 +1,12 @@
 .ContactView__ {
   background: black;
   margin-top: 40px;
-  padding: 20px 0 40px 0;
+  padding: 0 0 70px 0;
   color: var(--secondary-color);
+}
+
+.ContactView__section-title {
+  background: black;
 }
 
 .ContactView__info-container {

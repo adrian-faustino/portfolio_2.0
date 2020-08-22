@@ -40,8 +40,8 @@
 
 ## QOL
 
-[] when user clicks another video to play, pause other videos
-[] when user clicks email, open email? or copy to clipboard (same with phone number -> copy to clipboard)
+[x] when user clicks another video to play, pause other videos
+[x] when user clicks email, open email? or copy to clipboard (same with phone number -> copy to clipboard)
 [] pick better font - make font sizes conistent
 [] on clicking a tech icon, bring the user to tech homepage (same with project stack)
 
@@ -56,16 +56,16 @@
 [] analytics (see which links are being clicked)
 [] contact form
 [x] contact bg black? (footer)
-[] section title bg white? (breaker/spacer)
+[x] section title bg white? (breaker/spacer)
 [] implement Material UI nav
 [x] stats section (homeview)
 [] add nav bar with logo
-[] icon on hover -> expand and show title
+[x] icon on hover -> expand and show title
 [x] mail on click mailto:adrian@gmail.com
-[] cartoon icon instead of real avatar
+[x] cartoon icon instead of real avatar
 [] contact/email form
-[] link IG
-[] divider between sections
+[] link IG ?
+[x] divider between sections
 [] color code tech stack on each project
 [] dl resume
 [] link github on each project
@@ -78,6 +78,7 @@
 [] FAQ for employers.. "why do you want to work for us.. frankly etc"
 [] add fade/slide animation in projects view when user selects project
 [] highlight currently selected task
+[] feedback on copied to clipboard 200
 
 ## Current task
 

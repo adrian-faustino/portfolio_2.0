@@ -9,7 +9,7 @@ import CopyToClipboard from "react-copy-to-clipboard";
 const ContactView = () => {
   return (
     <section className="ContactView__">
-      <h2>Contact</h2>
+      <h2 className="ContactView__section-title section-title">Contact</h2>
 
       <address className="ContactView__info-container">
         {/* location */}

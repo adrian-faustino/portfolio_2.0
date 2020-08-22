@@ -39,6 +39,9 @@ code {
 
   /* offsets */
   --nav-height: 90px;
+
+  /* font sizes */
+  --section-title: 32px;
 }
 
 /*
@@ -75,6 +78,6 @@ code {
   width: 100%;
   padding: 20px 0;
 
-  font-size: 30px;
+  font-size: var(--section-title);
   font-weight: bold;
 }
