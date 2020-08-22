@@ -11,6 +11,7 @@ interface RenderTree {
   id: string;
   name: string;
   children?: RenderTree[];
+  projectObj?: IProject;
 }
 
 const useStyles = makeStyles({
@@ -36,6 +37,7 @@ const RecursiveTreeView: React.FC<ProjectTreeProps> = (props) => {
       return {
         id: `${project}-${i}`,
         name: project.title.toString(),
+        projectObj: project,
       };
     });
   };
@@ -60,16 +62,19 @@ const RecursiveTreeView: React.FC<ProjectTreeProps> = (props) => {
   };
 
   // set clicked project to current project in ProjectView.tsx
-  const handleNodeClick = (e: React.MouseEvent) => {
-    const clickedProjectTitle = e.currentTarget.lastElementChild?.innerHTML;
-    console.log("Setting current project:", clickedProjectTitle);
-    setCurrentProject(clickedProjectTitle);
+  const handleNodeClick = (
+    e: React.MouseEvent,
+    projectObj: IProject | undefined
+  ) => {
+    setCurrentProject(projectObj);
   };
 
   const renderTree = (nodes: RenderTree) => (
     <TreeItem
       // only add on click to outermost branch
-      onClick={nodes.children ? undefined : handleNodeClick}
+      onClick={
+        nodes.children ? undefined : (e) => handleNodeClick(e, nodes.projectObj)
+      }
       key={nodes.id}
       nodeId={nodes.id}
       label={nodes.name}

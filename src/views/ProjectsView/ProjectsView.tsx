@@ -7,9 +7,17 @@ import { IProject } from "../../constants/types";
 /* Subcomponents */
 import { Project, ContentAccordion, ProjectTree } from "../../components";
 
+const initialState: IProject = {
+  title: "",
+  description: "",
+  vid_url: "",
+  tech_stack: [""],
+  site_url: "",
+};
+
 const ProjectsView = () => {
   /* State */
-  const [currentProject, setCurrentProejct] = useState();
+  const [currentProject, setCurrentProejct] = useState(initialState);
 
   const spread_projects_jsx = (projects: Array<IProject>) => {
     return projects.map((project, i) => (
@@ -23,7 +31,7 @@ const ProjectsView = () => {
     <section>
       <h2>Projects</h2>
 
-      <div className="ProjectsView__wrapper">
+      {/* <div className="ProjectsView__wrapper">
         <div className="ProjectsView__col1">
           <h3>Personal Projects</h3>
           {spread_projects_jsx(PERSONAL_PROJECTS)}
@@ -33,12 +41,14 @@ const ProjectsView = () => {
           <h3>Client Projects</h3>
           {spread_projects_jsx(CLIENT_PROJECTS)}
         </div>
-      </div>
+      </div> */}
 
       <ProjectTree
         setCurrentProject={setCurrentProejct}
         categories={[PERSONAL_PROJECTS, CLIENT_PROJECTS]}
       />
+
+      {currentProject.title && <Project project={currentProject} />}
     </section>
   );
 };
