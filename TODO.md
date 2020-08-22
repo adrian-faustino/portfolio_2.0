@@ -86,4 +86,5 @@
 [x] home page
 [x] display project info
 [x] display tech (skills section)
-[] link github on each project
+[x] link github on each project
+[] when user selects a project, center screen to top of project section

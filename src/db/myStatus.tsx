@@ -7,6 +7,10 @@ export const CURRENTLY_LEARNING: Array<String> = [
   "Mobile First Design",
 ];
 
-export const CURRENTLY_REVIEWING: Array<String> = ["TypeScript", "MVC Model"];
+export const CURRENTLY_REVIEWING: Array<String> = [
+  "TypeScript",
+  "MVC Model",
+  "Responsive Design",
+];
 
 export const LEARNING_NEXT: Array<String> = ["React Native", "BEM"];

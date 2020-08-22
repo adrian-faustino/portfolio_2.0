@@ -21,10 +21,30 @@
   margin: 15px;
   padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.37);
-  box-shadow: inset 0 0 7px rgba(5, 149, 239, 0.756);
+  box-shadow: inset 0 0 3px black;
   background: rgba(128, 128, 128, 0.479);
   border-radius: 5px;
 
   /* text */
   font-weight: 450;
+}
+
+@media only screen and (max-width: 600px) {
+  /* 3 columns -> 1 column  */
+  .SkillsView__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .SkillsView__icon-container {
+    background: rgba(249, 249, 249, 0.664);
+  }
+
+  .SkillsView__wrapper > div {
+    background: none;
+  }
+
+  .SkillsView__misc-paragraph {
+    background: none;
+  }
 }

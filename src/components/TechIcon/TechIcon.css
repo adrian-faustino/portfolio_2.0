@@ -37,3 +37,13 @@
   transform: scale(1.2);
 }
 /* END: On hover, display skill label */
+
+@media only screen and (max-width: 600px) {
+  .TechIcon__skill-image {
+    background: none;
+  }
+
+  .TechIcon__show-on-hover {
+    color: black;
+  }
+}
