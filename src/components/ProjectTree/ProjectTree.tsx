@@ -1,4 +1,6 @@
 import React from "react";
+/* Style */
+import "./ProjectTree.css";
 /* Material UI */
 import { TreeView, TreeItem } from "@material-ui/lab";
 import { ExpandMore, ChevronRight } from "@material-ui/icons";
@@ -50,6 +52,7 @@ const RecursiveTreeView: React.FC<ProjectTreeProps> = (props) => {
 
   // set clicked project to current project in ProjectView.tsx
   const handleNodeClick = (e: React.MouseEvent, projectObj: IProject) => {
+    console.log("Setting current project to", projectObj.title);
     handleChangeProject(projectObj);
   };
 
@@ -65,14 +68,13 @@ const RecursiveTreeView: React.FC<ProjectTreeProps> = (props) => {
       nodeId={nodes.id}
       label={nodes.name}
     >
-      {Array.isArray(nodes.children)
-        ? nodes.children.map((node) => renderTree(node))
-        : null}
+      {nodes.children ? nodes.children.map((node) => renderTree(node)) : null}
     </TreeItem>
   );
 
   return (
     <TreeView
+      className="ProjectTree__tree-title"
       defaultCollapseIcon={<ExpandMore />}
       defaultExpandIcon={<ChevronRight />}
     >
