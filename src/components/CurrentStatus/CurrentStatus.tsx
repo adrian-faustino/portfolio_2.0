@@ -9,11 +9,14 @@ import {
   LEARNING_NEXT,
 } from "../../db/myStatus";
 /* Material UI */
-import { withStyles } from "@material-ui/core/styles";
-import MuiAccordion from "@material-ui/core/Accordion";
-import MuiAccordionSummary from "@material-ui/core/AccordionSummary";
-import MuiAccordionDetails from "@material-ui/core/AccordionDetails";
-import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/core/styles";
+import {
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+  Typography,
+} from "@material-ui/core";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 const CurrentStatus = () => {
   /* State */
@@ -22,84 +25,50 @@ const CurrentStatus = () => {
   // spread the list of items in myStatus.tsx db
   const spread_items_jsx = (items: Array<String>) => {
     return items.map((item, i) => (
-      <div key={`${item}-${i}-status`}>{item}</div>
+      <span key={`${item}-${i}-status`}>{item}</span>
     ));
   };
 
-  // one accordion "row"
-  const Accordion = withStyles({
+  // Accordion styles
+  // Ref docs: https://material-ui.com/components/accordion/
+  const useStyles = makeStyles((theme) => ({
     root: {
-      border: "1px solid rgba(0, 0, 0, .125)",
-      boxShadow: "none",
-      "&:not(:last-child)": {
-        borderBottom: 0,
-      },
-      "&:before": {
-        display: "none",
-      },
-      "&$expanded": {
-        margin: "auto",
-      },
+      width: "100%",
     },
-    expanded: {},
-  })(MuiAccordion);
+    heading: {
+      fontSize: theme.typography.pxToRem(20),
+      fontWeight: theme.typography.fontWeightMedium,
+    },
+  }));
 
-  // accordion title
-  const AccordionSummary = withStyles({
-    root: {
-      backgroundColor: "rgba(0, 0, 0, .03)",
-      borderBottom: "1px solid rgba(0, 0, 0, .125)",
-      marginBottom: -1,
-      minHeight: 56,
-      "&$expanded": {
-        minHeight: 56,
-      },
-    },
-    content: {
-      "&$expanded": {
-        margin: "12px 0",
-      },
-    },
-    expanded: {},
-  })(MuiAccordionSummary);
-
-  const AccordionDetails = withStyles((theme) => ({
-    root: {
-      padding: theme.spacing(2),
-      // set bg color of expanded accordion details
-      backgroundColor: "var(--secondary-color)",
-      boxShadow: "inset 0 0 5px black",
-    },
-  }))(MuiAccordionDetails);
-
-  const handleChange = (panel: any) => (event: any, newExpanded: any) => {
-    setExpanded(newExpanded ? panel : false);
-  };
+  const classes = useStyles();
 
   return (
-    <div>
-      {/* Accordion row: employment status */}
-      <Accordion
-        square
-        expanded={expanded === "panel1"}
-        onChange={handleChange("panel1")}
-      >
-        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>Employment Status</Typography>
+    <div className={classes.root}>
+      {/* Accordion row: employment status*/}
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography className={classes.heading}>Employment Status</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          {spread_items_jsx(EMPLOYMENT_STATUS)}
+          <Typography>{spread_items_jsx(EMPLOYMENT_STATUS)}</Typography>
         </AccordionDetails>
       </Accordion>
 
       {/* Accordion row: currently learning */}
-      <Accordion
-        square
-        expanded={expanded === "panel2"}
-        onChange={handleChange("panel2")}
-      >
-        <AccordionSummary id="panel2d-header">
-          <Typography>Currently Learning</Typography>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+        >
+          <Typography className={classes.heading}>
+            Currently Learning
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>{spread_items_jsx(CURRENTLY_LEARNING)}</Typography>
@@ -107,13 +76,15 @@ const CurrentStatus = () => {
       </Accordion>
 
       {/* Accordion row: currently reviewing */}
-      <Accordion
-        square
-        expanded={expanded === "panel3"}
-        onChange={handleChange("panel3")}
-      >
-        <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography>Currently Reviewing</Typography>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel3a-content"
+          id="panel3a-header"
+        >
+          <Typography className={classes.heading}>
+            Currently Reviewing
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>{spread_items_jsx(CURRENTLY_REVIEWING)}</Typography>
@@ -121,13 +92,13 @@ const CurrentStatus = () => {
       </Accordion>
 
       {/* Accordion row: learning next */}
-      <Accordion
-        square
-        expanded={expanded === "panel4"}
-        onChange={handleChange("panel4")}
-      >
-        <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
-          <Typography>Learning Next</Typography>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel4a-content"
+          id="panel4a-header"
+        >
+          <Typography className={classes.heading}>Learning Next</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>{spread_items_jsx(LEARNING_NEXT)}</Typography>
