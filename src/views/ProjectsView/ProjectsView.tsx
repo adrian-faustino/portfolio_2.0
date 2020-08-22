@@ -22,14 +22,18 @@ const ProjectsView = () => {
   };
 
   return (
-    <section className="ProjectsView__wrapper">
-      <ProjectTree handleChangeProject={handleChangeProject} />
+    <section>
+      <h2 className="section-title">My Projects</h2>
 
-      {currentProject.title ? (
-        <Project project={currentProject} />
-      ) : (
-        <div></div>
-      )}
+      <div className="ProjectsView__wrapper">
+        <ProjectTree handleChangeProject={handleChangeProject} />
+
+        {currentProject.title ? (
+          <Project project={currentProject} />
+        ) : (
+          <div></div>
+        )}
+      </div>
     </section>
   );
 };

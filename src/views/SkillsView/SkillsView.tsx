@@ -21,7 +21,7 @@ const SkillsView = () => {
 
   return (
     <div>
-      <h2>Skills</h2>
+      <h2 className="section-title">My Skills</h2>
 
       <div className="SkillsView__wrapper">
         <div className="SkillsView__col1">

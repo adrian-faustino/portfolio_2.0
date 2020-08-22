@@ -15,6 +15,7 @@ import {
   MERN_STACK,
   WORDPRESS,
   SQUARESPACE,
+  REDUX,
 } from "./mySkills";
 
 // => personal projects
@@ -40,7 +41,7 @@ const dispatchScheduler: IProject = {
   title: "Dispatch Scheduler",
   description: "An app that helps track dispatches for truck companies.",
   vid_url: "https://www.youtube.com/embed/thNQ45Q_w0g",
-  tech_stack: [REACT, JAVASCRIPT, CSS, BOOTSTRAP, EXPRESS],
+  tech_stack: [REACT, REDUX, JAVASCRIPT, CSS, BOOTSTRAP, EXPRESS],
   site_url: "https://dispatch-scheduler.herokuapp.com/",
 };
 

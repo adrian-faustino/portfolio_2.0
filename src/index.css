@@ -69,3 +69,12 @@ code {
   font-weight: 500;
   font-size: 20px;
 }
+
+.section-title {
+  background: rgba(255, 255, 255, 0.331);
+  width: 100%;
+  padding: 20px 0;
+
+  font-size: 30px;
+  font-weight: bold;
+}

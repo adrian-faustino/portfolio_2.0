@@ -26,6 +26,8 @@ const HomeView = () => {
       </div>
 
       <ExternalLinks />
+
+      <h2 className="section-title">My Status</h2>
       <CurrentStatus />
     </section>
   );

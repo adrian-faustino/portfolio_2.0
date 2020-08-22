@@ -20,7 +20,8 @@
   /* background */
   margin: 15px;
   padding: 10px;
-  box-shadow: inset 0 0 5px black;
+  border: 1px solid rgba(0, 0, 0, 0.37);
+  box-shadow: inset 0 0 7px rgba(5, 149, 239, 0.756);
   background: rgba(128, 128, 128, 0.479);
   border-radius: 5px;
 

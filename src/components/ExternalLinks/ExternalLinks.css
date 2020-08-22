@@ -3,6 +3,7 @@
   flex-direction: row;
   width: max-content;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .ExternalLinks__container > a > img {

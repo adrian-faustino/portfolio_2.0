@@ -77,6 +77,7 @@
 [] TLDR version of site
 [] FAQ for employers.. "why do you want to work for us.. frankly etc"
 [] add fade/slide animation in projects view when user selects project
+[] highlight currently selected task
 
 ## Current task
 
