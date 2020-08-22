@@ -4,7 +4,7 @@
   justify-content: center;
   width: max-content;
   /* OVERRIDE: Material UI */
-  box-shadow: none !important;
+  box-shadow: 0 0 3px black !important;
 }
 
 .Project__vid-player {

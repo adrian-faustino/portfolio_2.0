@@ -12,7 +12,6 @@
 .ProjectTree__tree-item {
   text-align: left;
   background: white;
-  border-radius: 5px;
 
   /* OVERRIDE: Material UI */
   padding: 10px !important;
