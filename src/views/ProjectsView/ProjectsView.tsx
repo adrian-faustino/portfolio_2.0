@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 /* Styles */
 import "./ProjectsView.css";
 /* Constants */
 import { PERSONAL_PROJECTS, CLIENT_PROJECTS } from "../../db/myProjects";
 import { IProject } from "../../constants/types";
 /* Subcomponents */
-import { Project, ContentAccordion } from "../../components";
+import { Project, ContentAccordion, ProjectTree } from "../../components";
 
 const ProjectsView = () => {
+  /* State */
+  const [currentProject, setCurrentProejct] = useState();
+
   const spread_projects_jsx = (projects: Array<IProject>) => {
     return projects.map((project, i) => (
       <ContentAccordion key={`${project}-${i}-accordion`} title={project.title}>
@@ -31,6 +34,8 @@ const ProjectsView = () => {
           {spread_projects_jsx(CLIENT_PROJECTS)}
         </div>
       </div>
+
+      <ProjectTree categories={[PERSONAL_PROJECTS, CLIENT_PROJECTS]} />
     </section>
   );
 };
