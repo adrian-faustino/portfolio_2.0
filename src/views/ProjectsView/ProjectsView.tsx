@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./ProjectsView.css";
 import { IProject } from "../../constants/types";
 /* Subcomponents */
-import { Project, ProjectTree } from "../../components";
+import { Project, ProjectTree, MobileAccordions } from "../../components";
 /* Material UI */
 import Alert from "@material-ui/lab/Alert";
 
@@ -32,17 +32,23 @@ const ProjectsView = () => {
         have a look. Code reviews and feedback are very veeerry welcome!
       </Alert>
 
-      <div className="ProjectsView__wrapper">
-        <ProjectTree handleChangeProject={handleChangeProject} />
+      {/* Only show above 945px */}
+      <div className="hide show-above-945px">
+        <div className="ProjectsView__wrapper">
+          <ProjectTree handleChangeProject={handleChangeProject} />
 
-        {currentProject.title ? (
-          <Project project={currentProject} />
-        ) : (
-          <div></div>
-        )}
+          {currentProject.title ? (
+            <Project project={currentProject} />
+          ) : (
+            <div></div>
+          )}
+        </div>
       </div>
 
-      {/* <button onClick>mobile?</button> */}
+      {/* Only displayed/rendered if viewport below 945px */}
+      <div className="hide-above-945px">
+        <MobileAccordions />
+      </div>
     </section>
   );
 };

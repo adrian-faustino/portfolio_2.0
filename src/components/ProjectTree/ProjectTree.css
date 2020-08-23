@@ -29,11 +29,8 @@
 }
 
 @media only screen and (max-width: 600px) {
+  /* for mobile view, display MobileAccordion.tsx instead of tree */
   .ProjectTree__tree-container {
-    box-shadow: none;
-  }
-
-  .ProjectTree__tree-item {
-    padding: 0 5px !important;
+    display: none;
   }
 }

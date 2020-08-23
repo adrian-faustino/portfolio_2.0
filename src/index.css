@@ -81,3 +81,35 @@ code {
   font-size: var(--section-title);
   font-weight: bold;
 }
+
+/* BEGIN: mobile hide/show  */
+.hide {
+  display: none;
+}
+
+/* show these elements below 945px */
+@media only screen and (max-width: 945px) {
+  .hide-above-945px {
+    /* IE support fallback */
+    display: block !important;
+    display: initial !important;
+  }
+
+  .show-above-945px {
+    display: hidden !important;
+  }
+}
+
+/* show these elements above 945px */
+@media only screen and (min-width: 946px) {
+  .hide-above-945px {
+    display: none !important;
+  }
+
+  .show-above-945px {
+    /* IE support fallback */
+    display: block !important;
+    display: initial !important;
+  }
+}
+/* END: mobile hide/show  */
