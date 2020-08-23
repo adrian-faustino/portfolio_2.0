@@ -35,7 +35,7 @@
 
 .HomeView__about-me {
   max-width: 500px;
-  margin: 20px auto;
+  margin: 30px auto 20px auto;
   padding: 10px;
 }
 
@@ -51,5 +51,9 @@
   .HomeView__avatar {
     margin: 10px 0 0 0;
     width: 90%;
+  }
+
+  .HomeView__about-me {
+    width: 88%;
   }
 }
