@@ -7,9 +7,18 @@
   box-shadow: 0 0 3px black !important;
 }
 
+.MuiAccordionDetails-root {
+  /* OVERRIDE: Material UI - remove padding so cards can occupy whole space */
+  padding: 0 0 20px 0 !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.297);
+}
+
 .Project__vid-player {
   /* OVERRIDE: ReactPlayer */
-  width: 40vw !important;
+  width: 60vw !important;
+  /* desktop breakpoint */
+  min-width: 500px;
+  max-width: 55vw;
   margin-bottom: 10px;
 }
 
@@ -89,4 +98,31 @@
   height: inherit;
   width: auto;
   margin-right: 5px;
+}
+
+@media only screen and (max-width: 945px) {
+  .Project__container {
+    /* OVERRIDE: Material UI */
+    background: var(--grays2) !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Project__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .MuiAccordionDetails-root {
+    /* OVERRIDE: Material UI - remove padding so cards can occupy whole space */
+    padding: 0 !important;
+  }
+
+  .Project__vid-player {
+    /* OVERRIDE: Material UI */
+    height: 200px !important;
+    min-width: 310px !important;
+    display: inline-block;
+  }
 }
