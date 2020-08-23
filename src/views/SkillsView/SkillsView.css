@@ -2,12 +2,14 @@
 .SkillsView__wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding: 0 120px;
+  grid-gap: 20px;
 }
 
 /* one column */
 .SkillsView__wrapper > div {
+  /* this provides the full width white bg on each column */
   background-color: white;
-  margin: 0 20px;
 }
 
 .SkillsView__icon-container {
@@ -29,11 +31,14 @@
   font-weight: 450;
 }
 
-@media only screen and (max-width: 600px) {
+/* this breakpoint changes grid to 1 column when icons drop down 2 per row */
+@media only screen and (max-width: 920px) {
   /* 3 columns -> 1 column  */
   .SkillsView__wrapper {
     display: flex;
     flex-direction: column;
+    /* OVERRIDE: Material UI */
+    padding: 0 !important;
   }
 
   .SkillsView__icon-container {
@@ -42,9 +47,19 @@
 
   .SkillsView__wrapper > div {
     background: none;
+    margin: 0 10px;
   }
 
   .SkillsView__misc-paragraph {
     background: none;
+  }
+}
+
+/* this breakpoint insures 3-4 icons per row */
+@media only screen and (max-width: 1500px) {
+  /* reduce margin between 3 columns */
+  .SkillsView__wrapper {
+    padding: 0 20px;
+    grid-gap: 20px;
   }
 }
