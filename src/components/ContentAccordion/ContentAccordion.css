@@ -15,4 +15,9 @@
     height: 90vh;
   }
   /* END: make the currently toggled project take up the whole view on mobile */
+
+  /* add wrapper */
+  .ContentAccordion__title {
+    width: 95%;
+  }
 }

@@ -89,3 +89,5 @@
 [x] readme to remind myself how to update my data
 [x] when user selects a project, center screen to top of project section
 [] color code tech stack on each project
+[] replace "buttons" with chips
+[] fix accordion gap for currentstatus

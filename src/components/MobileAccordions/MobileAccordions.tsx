@@ -1,4 +1,6 @@
 import React from "react";
+/* Styles */
+import "./MobileAccordions.css";
 /* Subcomponents */
 import { ContentAccordion, Project } from "..";
 /* Constants */

@@ -9,7 +9,7 @@
 
 .ProjectsView__info-alert {
   max-width: 300px;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
   /* OVERRIDE: Material UI */
   text-align: left !important;
 }

@@ -7,6 +7,8 @@ import { ExpandMore, ChevronRight } from "@material-ui/icons";
 /* Constants */
 import { IProject } from "../../constants/types";
 import { PERSONAL_PROJECTS, CLIENT_PROJECTS } from "../../db/myProjects";
+/* Util */
+import { scrollToRef } from "../../util";
 
 interface RenderTree {
   id: string;
@@ -56,9 +58,6 @@ const RecursiveTreeView: React.FC<ProjectTreeProps> = (props) => {
     e.preventDefault();
     console.log("Setting current project to", projectObj.title);
     handleChangeProject(projectObj);
-
-    // focus ProjectView.tsx
-    projectViewRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   const renderTree = (nodes: RenderTree) => (
@@ -80,6 +79,8 @@ const RecursiveTreeView: React.FC<ProjectTreeProps> = (props) => {
 
   return (
     <TreeView
+      // scroll to ProjectView.tsx
+      onClick={() => scrollToRef(projectViewRef)}
       disableSelection={true}
       className="ProjectTree__tree-container"
       defaultCollapseIcon={<ExpandMore />}

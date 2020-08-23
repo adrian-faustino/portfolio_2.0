@@ -9,6 +9,8 @@ import {
   AccordionDetails,
 } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+/* Util */
+import { scrollToRef } from "../../util";
 
 interface IContentAccordion {
   title: String;
@@ -18,7 +20,7 @@ const ContentAccordion: React.FC<IContentAccordion> = (props) => {
   const scrollIntoViewRef = useRef<HTMLDivElement>(null);
 
   const handleScrollIntoView = () => {
-    scrollIntoViewRef.current?.scrollIntoView({ behavior: "smooth" });
+    scrollToRef(scrollIntoViewRef);
   };
 
   return (
