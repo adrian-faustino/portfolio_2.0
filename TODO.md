@@ -47,7 +47,7 @@
 
 # TODO
 
-[] breakpoints for browser/mobile
+[x] breakpoints for browser/mobile
 [x] add alt for imgs (Accessibility)
 [x] convert projects to dropdowns (Material UI)
 [x] downloaded PDF
@@ -63,12 +63,11 @@
 [x] icon on hover -> expand and show title
 [x] mail on click mailto:adrian@gmail.com
 [x] cartoon icon instead of real avatar
-[] contact/email form
 [] link IG ?
 [x] divider between sections
 [] color code tech stack on each project
 [] dl resume
-[] link github on each project
+[x] link github on each project
 
 ## Stretch
 
@@ -87,4 +86,5 @@
 [x] display project info
 [x] display tech (skills section)
 [x] link github on each project
+[] readme to remind myself how to update my data
 [] when user selects a project, center screen to top of project section
