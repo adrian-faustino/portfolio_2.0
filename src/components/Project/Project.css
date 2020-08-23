@@ -32,26 +32,18 @@
   font-style: italic;
 }
 
-.Project__tech-ul {
-  background: blue;
-  display: contents;
-  list-style-type: none;
-  display: contents;
-}
-
-.Project__tech-li {
-  background: var(--base-color);
+.Project__tech-item {
   font-weight: 450;
-  padding: 5px;
+  /* OVERRIDE: Material UI */
+  padding: 5px 10px !important;
+  margin: 2px 5px;
 }
 
-/* 3 x 3 tech grid */
+/* tech grid */
 .Project__tech-grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  grid-gap: 2px;
-  grid-template-columns: repeat(3, 1fr);
-  background: var(--secondary-color2);
 }
 
 /* Footer section with links */

@@ -6,7 +6,8 @@ import { IProject } from "../../constants/types";
 /* npm */
 import ReactPlayer from "react-player";
 /* Material UI */
-import { Card, CardContent, Typography } from "@material-ui/core";
+import { Card, CardContent, Typography, Chip } from "@material-ui/core";
+import DoneIcon from "@material-ui/icons/Done";
 
 interface ProjectProps {
   project: IProject;
@@ -35,9 +36,12 @@ const Project: React.FC<ProjectProps> = (props) => {
 
   const spreadTechJsx = (techs: Array<String>) => {
     return techs.map((tech, i) => (
-      <li className="Project__tech-li" key={`${tech}-${i}`}>
-        {tech}
-      </li>
+      <Chip
+        className="Project__tech-item"
+        key={`${tech}-${i}`}
+        label={tech}
+        icon={<DoneIcon />}
+      />
     ));
   };
 
@@ -63,9 +67,7 @@ const Project: React.FC<ProjectProps> = (props) => {
 
         {/* tech stack */}
         <h3>Tech</h3>
-        <div className="Project__tech-grid">
-          <ul className="Project__tech-ul">{spreadTechJsx(tech_stack)}</ul>
-        </div>
+        <div className="Project__tech-grid">{spreadTechJsx(tech_stack)}</div>
 
         <div className="Project__links-container">
           {/* link to site */}

@@ -26,8 +26,6 @@ const ProjectsView = () => {
     setCurrentProejct(project);
   };
 
-  const handleScrollToView = () => projectViewRef.current?.scrollIntoView();
-
   return (
     <section>
       <h2 className="section-title">My Projects</h2>
