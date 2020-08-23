@@ -3,9 +3,16 @@ import React from "react";
 import "./LandingView.css";
 
 const LandingView = () => {
+  // scroll to next section
+  const handleScrollToView = () => {
+    /* alt+f relation: scroll to view */
+    // 1.04 === 4vh
+    window.scrollTo(0, window.innerHeight * 1.04);
+  };
+
   return (
     <div className="LandingView__main-container">
-      <div className="LandingView__logo-container">
+      <div onClick={handleScrollToView} className="LandingView__logo-container">
         <img
           className="LandingView__logo"
           src="/portfolio_2.0_assets/images/myLogo.png"
