@@ -44,6 +44,9 @@ code {
   --section-title: 32px;
 }
 
+h3 {
+  margin: 13px 0 3px 0;
+}
 /*
  * GENERAL
  */

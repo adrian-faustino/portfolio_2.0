@@ -20,7 +20,7 @@ import {
 
 // => personal projects
 const drawmageddon: IProject = {
-  title: "Drawamgeddon",
+  title: "Drawmageddon",
   description: "A multiplayer multilobby web browser drawing game.",
   vid_url: "https://www.youtube.com/embed/PjMwslXvpuc",
   tech_stack: [
