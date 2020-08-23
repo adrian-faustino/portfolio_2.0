@@ -37,3 +37,6 @@ const AccordionConstructor: React.FC<AccordionConstructorProps> = (props) => {
 };
 
 export default AccordionConstructor;
+
+// Component notes: This is rendering controlled accordion. i.e. Only 1 can currently be opened.
+// See ContentAccordion.tsx for uncontrolled

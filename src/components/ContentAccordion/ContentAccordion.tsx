@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 /* Styles */
 import "./ContentAccordion.css";
 /* Material UI */
@@ -15,10 +15,17 @@ interface IContentAccordion {
 }
 
 const ContentAccordion: React.FC<IContentAccordion> = (props) => {
+  const scrollIntoViewRef = useRef<HTMLDivElement>(null);
+
+  const handleScrollIntoView = () => {
+    scrollIntoViewRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <div>
+    <div ref={scrollIntoViewRef}>
       <Accordion>
         <AccordionSummary
+          onClick={handleScrollIntoView}
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
@@ -34,3 +41,6 @@ const ContentAccordion: React.FC<IContentAccordion> = (props) => {
 };
 
 export default ContentAccordion;
+
+// Component notes: This is rendering uncontrolled accordion. i.e. Multiple can open vs only 1 currently opened.
+// See AccordionConstructor.tsx for controlled
