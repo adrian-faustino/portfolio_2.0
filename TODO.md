@@ -87,4 +87,4 @@
 [x] display tech (skills section)
 [x] link github on each project
 [] readme to remind myself how to update my data
-[] when user selects a project, center screen to top of project section
+[x] when user selects a project, center screen to top of project section
