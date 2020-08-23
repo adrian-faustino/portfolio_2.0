@@ -19,16 +19,10 @@
 }
 
 .SkillsView__misc-paragraph {
-  /* background */
-  margin: 15px;
-  padding: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.37);
-  box-shadow: inset 0 0 3px black;
-  background: rgba(128, 128, 128, 0.479);
-  border-radius: 5px;
-
-  /* text */
+  padding: 0 15px;
+  text-align: left;
   font-weight: 450;
+  font-style: italic;
 }
 
 /* this breakpoint changes grid to 1 column when icons drop down 2 per row */
@@ -48,10 +42,6 @@
   .SkillsView__wrapper > div {
     background: none;
     margin: 0 10px;
-  }
-
-  .SkillsView__misc-paragraph {
-    background: none;
   }
 }
 

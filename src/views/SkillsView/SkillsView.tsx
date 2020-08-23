@@ -23,24 +23,27 @@ const SkillsView = () => {
     <div>
       <h2 className="section-title">My Skills</h2>
 
+      {/* front end cloumn */}
       <div className="SkillsView__wrapper">
-        <div className="SkillsView__col1">
+        <div>
           <h3>Front End</h3>
           <div className="SkillsView__icon-container">
             {mapSkillsJSX(FRONT_END_TECH)}
           </div>
         </div>
 
-        <div className="SkillsView__col2">
+        {/* back end column */}
+        <div>
           <h3>Back End</h3>
           <div className="SkillsView__icon-container">
             {mapSkillsJSX(BACK_END_TECH)}
           </div>
         </div>
 
-        <div className="SkillsView__col3">
+        {/* misc column */}
+        <div>
           <h3>Misc</h3>
-          <div className="SkillsView__icon-container">
+          <div className="SkillsView__icon-container col-3">
             {mapSkillsJSX(MISC_SKILLS)}
 
             {/* Misc skills paragraph on 3rd column */}

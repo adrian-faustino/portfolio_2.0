@@ -25,7 +25,7 @@ const ContentAccordion: React.FC<IContentAccordion> = (props) => {
 
   return (
     <div className="ContentAccordion__main-container" ref={scrollIntoViewRef}>
-      <Accordion>
+      <Accordion square>
         <AccordionSummary
           onClick={handleScrollIntoView}
           expandIcon={<ExpandMoreIcon />}
