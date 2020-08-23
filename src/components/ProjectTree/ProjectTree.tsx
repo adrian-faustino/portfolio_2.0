@@ -17,10 +17,11 @@ interface RenderTree {
 
 interface ProjectTreeProps {
   handleChangeProject: (project: IProject) => void;
+  projectViewRef: React.RefObject<HTMLElement>;
 }
 
 const RecursiveTreeView: React.FC<ProjectTreeProps> = (props) => {
-  const { handleChangeProject } = props;
+  const { handleChangeProject, projectViewRef } = props;
 
   // spread list found in myProjects.tsx
   const spreadChildren = (projects: Array<IProject>) => {
@@ -55,6 +56,9 @@ const RecursiveTreeView: React.FC<ProjectTreeProps> = (props) => {
     e.preventDefault();
     console.log("Setting current project to", projectObj.title);
     handleChangeProject(projectObj);
+
+    // focus ProjectView.tsx
+    projectViewRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   const renderTree = (nodes: RenderTree) => (

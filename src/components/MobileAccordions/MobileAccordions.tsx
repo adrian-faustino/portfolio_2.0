@@ -7,8 +7,11 @@ import { IProject } from "../../constants/types";
 
 const MobileAccordions = () => {
   const spreadProjectsJSX = (projects: Array<IProject>) => {
-    return projects.map((project) => (
-      <ContentAccordion title={project.title}>
+    return projects.map((project, i) => (
+      <ContentAccordion
+        key={`${project.title}-${i}-mobile-accordions`}
+        title={project.title}
+      >
         <Project project={project} />
       </ContentAccordion>
     ));

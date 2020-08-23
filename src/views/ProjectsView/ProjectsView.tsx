@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 /* Styles */
 import "./ProjectsView.css";
 import { IProject } from "../../constants/types";
@@ -19,6 +19,9 @@ const ProjectsView = () => {
   /* State */
   const [currentProject, setCurrentProejct] = useState(initialState);
 
+  // reference to scroll to this view when user clicks project
+  const projectViewRef = useRef<HTMLDivElement>(null);
+
   const handleChangeProject = (project: IProject) => {
     setCurrentProejct(project);
   };
@@ -32,10 +35,16 @@ const ProjectsView = () => {
         have a look. Code reviews and feedback are very veeerry welcome!
       </Alert>
 
+      {/* when user selects project, view will scroll to this target */}
+      <div ref={projectViewRef}></div>
+
       {/* Only show above 945px */}
       <div className="hide show-above-945px">
         <div className="ProjectsView__wrapper">
-          <ProjectTree handleChangeProject={handleChangeProject} />
+          <ProjectTree
+            projectViewRef={projectViewRef}
+            handleChangeProject={handleChangeProject}
+          />
 
           {currentProject.title ? (
             <Project project={currentProject} />
