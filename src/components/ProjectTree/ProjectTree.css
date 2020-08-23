@@ -27,3 +27,13 @@
 .MuiTreeItem-label {
   background: white !important;
 }
+
+@media only screen and (max-width: 600px) {
+  .ProjectTree__tree-container {
+    box-shadow: none;
+  }
+
+  .ProjectTree__tree-item {
+    padding: 0 5px !important;
+  }
+}

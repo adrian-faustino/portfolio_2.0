@@ -41,6 +41,8 @@ const ProjectsView = () => {
           <div></div>
         )}
       </div>
+
+      {/* <button onClick>mobile?</button> */}
     </section>
   );
 };

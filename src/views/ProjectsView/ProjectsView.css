@@ -3,13 +3,18 @@
   position: relative;
   justify-content: center;
 
-  /* display: grid;
-  grid-template-columns: 1fr 2fr; */
-
+  /* when project is selected, split section into 2 columns */
   display: flex;
 }
 
 .ProjectsView__info-alert {
   max-width: 300px;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  /* 2 columns -> 1 column */
+  .ProjectsView__wrapper {
+    flex-direction: column;
+  }
 }
