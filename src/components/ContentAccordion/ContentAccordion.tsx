@@ -34,7 +34,9 @@ const ContentAccordion: React.FC<IContentAccordion> = (props) => {
             {props.title}
           </Typography>
         </AccordionSummary>
-        <AccordionDetails>{props.children}</AccordionDetails>
+        <AccordionDetails className="ContentAccordion__expanded-container">
+          {props.children}
+        </AccordionDetails>
       </Accordion>
     </div>
   );
