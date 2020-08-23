@@ -86,5 +86,6 @@
 [x] display project info
 [x] display tech (skills section)
 [x] link github on each project
-[] readme to remind myself how to update my data
+[x] readme to remind myself how to update my data
 [x] when user selects a project, center screen to top of project section
+[] color code tech stack on each project

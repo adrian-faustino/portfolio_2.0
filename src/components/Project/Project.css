@@ -104,6 +104,7 @@
   .Project__container {
     /* OVERRIDE: Material UI */
     background: var(--grays2) !important;
+    margin-bottom: 10px;
   }
 }
 

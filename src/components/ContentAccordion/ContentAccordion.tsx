@@ -22,7 +22,7 @@ const ContentAccordion: React.FC<IContentAccordion> = (props) => {
   };
 
   return (
-    <div ref={scrollIntoViewRef}>
+    <div className="ContentAccordion__main-container" ref={scrollIntoViewRef}>
       <Accordion>
         <AccordionSummary
           onClick={handleScrollIntoView}

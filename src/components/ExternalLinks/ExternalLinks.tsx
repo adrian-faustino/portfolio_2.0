@@ -2,7 +2,12 @@ import React from "react";
 /* Styles */
 import "./ExternalLinks.css";
 /* Constants */
-import { LINKED_IN_URL, GITHUB_URL, RESUME_URL } from "../../db/myAboutMe";
+import {
+  LINKED_IN_URL,
+  GITHUB_URL,
+  RESUME_URL,
+  INSTAGRAM_URL,
+} from "../../db/myAboutMe";
 
 const ExternalLinks = () => {
   return (
@@ -14,8 +19,9 @@ const ExternalLinks = () => {
       >
         See this site's repo
       </a>
-
+      {/* TODO: refactor all these a tags, DRY up code */}
       <div className="ExternalLinks__container">
+        {/* linkedin */}
         <a
           className="hover-white-bg"
           href={LINKED_IN_URL}
@@ -27,6 +33,8 @@ const ExternalLinks = () => {
             alt="linked-in-logo"
           />
         </a>
+
+        {/* github */}
         <a
           className="hover-white-bg"
           href={GITHUB_URL}
@@ -38,6 +46,8 @@ const ExternalLinks = () => {
             alt="github-logo"
           />
         </a>
+
+        {/* resume */}
         <a
           className="hover-white-bg"
           href={RESUME_URL}
