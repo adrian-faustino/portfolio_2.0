@@ -32,19 +32,34 @@
   font-style: italic;
 }
 
-/* tech grid */
+/* tech grid single item*/
 .Project__tech-item {
   font-weight: 550;
   border: 1px solid rgba(0, 0, 0, 0.235) !important;
-  /* OVERRIDE: Material UI */
-  padding: 5px 10px !important;
   margin: 2px 5px;
+  /* OVERRIDE: Material UI */
+  height: 40px !important;
+  /* OVERRIDE: Material UI - add space to the right of each tech item */
+  padding-right: 5px !important;
 }
 
-/* check mark on each chip */
-.MuiSvgIcon-root.MuiChip-icon {
-  color: white;
+/* BEGIN: Chip styles and TechIcon.tsx overrides */
+/* hide tech icon logo */
+.Project__tech-item-icon > * span {
+  display: none;
 }
+/* circle each icon and position to fit in chip */
+.Project__tech-item-icon > * img {
+  position: relative;
+  top: 0;
+  height: 25px;
+  width: 25px;
+  padding: 2px;
+  /* OVERRIDE: TechIcon.tsx if "React", opacity 0 bg */
+  background: white !important;
+  border-radius: 50%;
+}
+/* END: Chip styles and TechIcon.tsx overrides */
 
 .Project__tech-grid {
   display: flex;

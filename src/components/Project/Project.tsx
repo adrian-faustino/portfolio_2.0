@@ -13,7 +13,8 @@ import {
   Chip,
   withStyles,
 } from "@material-ui/core";
-import DoneIcon from "@material-ui/icons/Done";
+/* Subcomponents */
+import { TechIcon } from "../";
 
 interface ProjectProps {
   project: IProject;
@@ -28,6 +29,7 @@ const Project: React.FC<ProjectProps> = (props) => {
     github_url,
   } = props.project;
 
+  // Youtube player config
   const playerConfig = {
     youtube: {
       playerVars: {
@@ -40,6 +42,7 @@ const Project: React.FC<ProjectProps> = (props) => {
     },
   };
 
+  // display chips containing tech title, logo color as bg color, and the TechIcon.tsx component to diplay the tech's logo
   const spreadTechJsx = (techs: Array<ISkill>) => {
     return techs.map((tech, i) => {
       // add color to each chip
@@ -55,7 +58,11 @@ const Project: React.FC<ProjectProps> = (props) => {
           className="Project__tech-item"
           key={`${tech.title}-${i}`}
           label={tech.title}
-          icon={<DoneIcon />}
+          icon={
+            <div className="Project__tech-item-icon">
+              <TechIcon skill={tech} />
+            </div>
+          }
         />
       );
     });
@@ -93,7 +100,7 @@ const Project: React.FC<ProjectProps> = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Visit site
+            Visit Site
           </a>
 
           {/* link to GitHub */}
