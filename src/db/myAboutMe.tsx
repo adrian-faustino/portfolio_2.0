@@ -13,7 +13,7 @@ export const GITHUB_URL = "https://github.com/adrian-faustino";
 // export const RESUME_URL =
 //   "https://www.dropbox.com/s/yvq7nz98rtqrdjf/resume_ADRIAN_FAUSTINO.pdf?dl=0";
 export const RESUME_URL =
-  "/portfolio_2.0_assets/images/[ADRIAN_FAUSTINO]_resume.pdf";
+  "/portfolio_2.0_assets/images/Adrian_Faustino_resume.pdf";
 
 // for ContactView.tsx
 export const LOCATION = "Toronto, Canada";
