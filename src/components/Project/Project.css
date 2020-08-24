@@ -37,7 +37,7 @@
   font-weight: 550;
   border: 1px solid rgba(0, 0, 0, 0.235) !important;
   /* space between gaps */
-  margin: 20px 5px;
+  margin: 2px 5px;
   /* OVERRIDE: Material UI */
   height: 32px !important;
 }

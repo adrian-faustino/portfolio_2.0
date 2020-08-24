@@ -31,7 +31,7 @@
   border-radius: 20px;
 
   /* change this variable to change every element size for the landing page button */
-  --scale-change: 0.5;
+  --scale-change: 0.7;
   transform: scale(var(--scale-change));
 }
 
