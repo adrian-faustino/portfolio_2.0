@@ -5,19 +5,26 @@
 
 .CurrentStatus__list-item {
   margin-left: 15px;
-  background: var(--secondary-color);
+  /* background: var(--secondary-color); */
   padding: 10px 20px;
   border-radius: 5px;
-  box-shadow: 0 0 2px black;
   transition: all 0.4s;
+  /* OVERRIDE: Material UI */
+  border: 2px solid var(--secondary-color2) !important;
 }
 
-.CurrentStatus__list-item:hover {
+/* target font */
+.CurrentStatus__list-item > * {
+  color: var(--secondary-color2);
+  font-weight: 600;
+}
+
+/* .CurrentStatus__list-item:hover {
   cursor: pointer;
   color: white;
   background: var(--secondary-color2);
   transform: scale(1.2);
-}
+} */
 
 @media only screen and (max-width: 600px) {
   .MuiAccordionDetails-root {

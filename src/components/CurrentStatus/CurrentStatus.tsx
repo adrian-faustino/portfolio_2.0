@@ -10,6 +10,8 @@ import {
 } from "../../db/myStatus";
 /* Subcomponents */
 import { AccordionConstructor } from "../";
+/* Material UI */
+import Chip from "@material-ui/core/Chip";
 
 const CurrentStatus = () => {
   /* State */
@@ -18,9 +20,12 @@ const CurrentStatus = () => {
   // spread the list of items in myStatus.tsx db
   const spread_items_jsx = (items: Array<String>) => {
     return items.map((item, i) => (
-      <span className="CurrentStatus__list-item" key={`${item}-${i}-status`}>
-        {item}
-      </span>
+      <Chip
+        variant="outlined"
+        className="CurrentStatus__list-item"
+        key={`${item}-${i}-status`}
+        label={item}
+      />
     ));
   };
 
