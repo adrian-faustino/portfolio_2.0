@@ -10,8 +10,10 @@ export const ABOUT_ME_P2 =
 // for ExternalLinks.tsx
 export const LINKED_IN_URL = "https://www.linkedin.com/in/adrianfaustino/";
 export const GITHUB_URL = "https://github.com/adrian-faustino";
+// export const RESUME_URL =
+//   "https://www.dropbox.com/s/yvq7nz98rtqrdjf/resume_ADRIAN_FAUSTINO.pdf?dl=0";
 export const RESUME_URL =
-  "https://www.dropbox.com/s/yvq7nz98rtqrdjf/resume_ADRIAN_FAUSTINO.pdf?dl=0";
+  "/portfolio_2.0_assets/images/[ADRIAN_FAUSTINO]_resume.pdf";
 
 // for ContactView.tsx
 export const LOCATION = "Toronto, Canada";
