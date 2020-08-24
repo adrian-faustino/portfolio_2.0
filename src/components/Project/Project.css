@@ -34,10 +34,16 @@
 
 /* tech grid */
 .Project__tech-item {
-  font-weight: 450;
+  font-weight: 550;
+  border: 1px solid rgba(0, 0, 0, 0.235) !important;
   /* OVERRIDE: Material UI */
   padding: 5px 10px !important;
   margin: 2px 5px;
+}
+
+/* check mark on each chip */
+.MuiSvgIcon-root.MuiChip-icon {
+  color: white;
 }
 
 .Project__tech-grid {

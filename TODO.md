@@ -63,9 +63,8 @@
 [x] icon on hover -> expand and show title
 [x] mail on click mailto:adrian@gmail.com
 [x] cartoon icon instead of real avatar
-[] link IG ?
 [x] divider between sections
-[] color code tech stack on each project
+[x] color code tech stack on each project
 [] dl resume
 [x] link github on each project
 
@@ -88,6 +87,6 @@
 [x] link github on each project
 [x] readme to remind myself how to update my data
 [x] when user selects a project, center screen to top of project section
-[] color code tech stack on each project
+[x] color code tech stack on each project
 [x] replace "buttons" with chips
 [] fix accordion gap for currentstatus

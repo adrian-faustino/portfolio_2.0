@@ -42,6 +42,7 @@ const Project: React.FC<ProjectProps> = (props) => {
 
   const spreadTechJsx = (techs: Array<ISkill>) => {
     return techs.map((tech, i) => {
+      // add color to each chip
       const StyledChip = withStyles({
         root: {
           backgroundColor: tech.logo_color

@@ -11,5 +11,5 @@ export interface IProject {
 export interface ISkill {
   title: String;
   img_path: String;
-  logo_color?: String;
+  logo_color: String;
 }
