@@ -29,10 +29,15 @@
   cursor: pointer;
   transition: all 0.4s;
   border-radius: 20px;
+
+  /* change this variable to change every element size for the landing page button */
+  --scale-change: 0.5;
+  transform: scale(var(--scale-change));
 }
 
 .LandingView__logo-container:hover {
-  transform: scale(1.1);
+  /* Notes: see .LandingView__logo-container */
+  transform: scale(calc(var(--scale-change) + 0.1));
   box-shadow: 0 2px 5px 1px rgba(255, 255, 255, 0.466);
 }
 
