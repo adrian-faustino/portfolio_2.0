@@ -36,11 +36,17 @@
 .Project__tech-item {
   font-weight: 550;
   border: 1px solid rgba(0, 0, 0, 0.235) !important;
-  margin: 2px 5px;
+  /* space between gaps */
+  margin: 20px 5px;
   /* OVERRIDE: Material UI */
-  height: 40px !important;
-  /* OVERRIDE: Material UI - add space to the right of each tech item */
-  padding-right: 5px !important;
+  height: 32px !important;
+}
+
+/* move Tech logo and title together to the left */
+.Project__tech-item > * {
+  position: relative;
+  top: 0;
+  left: -5px;
 }
 
 /* BEGIN: Chip styles and TechIcon.tsx overrides */
@@ -50,11 +56,9 @@
 }
 /* circle each icon and position to fit in chip */
 .Project__tech-item-icon > * img {
-  position: relative;
-  top: 0;
   height: 25px;
   width: 25px;
-  padding: 2px;
+  padding: 1px;
   /* OVERRIDE: TechIcon.tsx if "React", opacity 0 bg */
   background: white !important;
   border-radius: 50%;
