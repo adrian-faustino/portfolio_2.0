@@ -148,7 +148,7 @@
   .Project__vid-player {
     /* OVERRIDE: Material UI */
     height: 200px !important;
-    min-width: 310px !important;
+    min-width: 89vw !important;
     display: inline-block;
     margin: 0;
   }
