@@ -37,7 +37,6 @@ const Project: React.FC<ProjectProps> = (props) => {
         controls: 1,
         iv_load_policy: 3,
         modestbranding: 1,
-        widget_referrer: "test",
       },
     },
   };
