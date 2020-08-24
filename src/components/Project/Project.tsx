@@ -2,11 +2,17 @@ import React from "react";
 /* Styles */
 import "./Project.css";
 /* Constants */
-import { IProject } from "../../constants/types";
+import { IProject, ISkill } from "../../constants/types";
 /* npm */
 import ReactPlayer from "react-player";
 /* Material UI */
-import { Card, CardContent, Typography, Chip } from "@material-ui/core";
+import {
+  Card,
+  CardContent,
+  Typography,
+  Chip,
+  withStyles,
+} from "@material-ui/core";
 import DoneIcon from "@material-ui/icons/Done";
 
 interface ProjectProps {
@@ -34,15 +40,24 @@ const Project: React.FC<ProjectProps> = (props) => {
     },
   };
 
-  const spreadTechJsx = (techs: Array<String>) => {
-    return techs.map((tech, i) => (
-      <Chip
-        className="Project__tech-item"
-        key={`${tech}-${i}`}
-        label={tech}
-        icon={<DoneIcon />}
-      />
-    ));
+  const spreadTechJsx = (techs: Array<ISkill>) => {
+    return techs.map((tech, i) => {
+      const StyledChip = withStyles({
+        root: {
+          backgroundColor: tech.logo_color
+            ? tech.logo_color.toString()
+            : undefined,
+        },
+      })(Chip);
+      return (
+        <StyledChip
+          className="Project__tech-item"
+          key={`${tech.title}-${i}`}
+          label={tech.title}
+          icon={<DoneIcon />}
+        />
+      );
+    });
   };
 
   return (

@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 /* Styles */
 import "./ProjectsView.css";
-import { IProject } from "../../constants/types";
+import { IProject, ISkill } from "../../constants/types";
 /* Subcomponents */
 import { Project, ProjectTree, MobileAccordions } from "../../components";
 /* Material UI */
@@ -11,7 +11,7 @@ const initialState: IProject = {
   title: "",
   description: "",
   vid_url: "",
-  tech_stack: [""],
+  tech_stack: [{ title: "", img_path: "" }],
   site_url: "",
 };
 

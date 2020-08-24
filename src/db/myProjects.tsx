@@ -2,20 +2,19 @@
 
 import { IProject } from "../constants/types";
 import {
-  REACT,
-  JAVASCRIPT,
-  HTML,
-  CSS,
-  BOOTSTRAP,
-  NODE_JS,
-  MONGO_DB,
-  EXPRESS,
-  SOCKET_IO,
-  HTML5_CANVAS,
-  MERN_STACK,
-  WORDPRESS,
-  SQUARESPACE,
-  REDUX,
+  mongo_db,
+  express,
+  react,
+  node_js,
+  javascript,
+  html5_canvas,
+  socket_io,
+  css,
+  redux,
+  html,
+  bootstrap,
+  wordpress,
+  squarespace,
 } from "./mySkills";
 
 // => personal projects
@@ -24,15 +23,14 @@ const drawmageddon: IProject = {
   description: "A multiplayer multilobby web browser drawing game.",
   vid_url: "https://www.youtube.com/embed/PjMwslXvpuc",
   tech_stack: [
-    MERN_STACK,
-    MONGO_DB,
-    EXPRESS,
-    REACT,
-    NODE_JS,
-    JAVASCRIPT,
-    HTML5_CANVAS,
-    SOCKET_IO,
-    CSS,
+    mongo_db,
+    express,
+    react,
+    node_js,
+    javascript,
+    html5_canvas,
+    socket_io,
+    css,
   ],
   site_url: "https://draw-mageddon.herokuapp.com/",
   github_url: "https://github.com/adrian-faustino/draw-mageddon",
@@ -42,7 +40,7 @@ const dispatchScheduler: IProject = {
   title: "Dispatch Scheduler",
   description: "An app that helps track dispatches for truck companies.",
   vid_url: "https://www.youtube.com/embed/thNQ45Q_w0g",
-  tech_stack: [REACT, REDUX, JAVASCRIPT, CSS, BOOTSTRAP, EXPRESS],
+  tech_stack: [react, redux, javascript, css, bootstrap, express],
   site_url: "https://dispatch-scheduler.herokuapp.com/",
   github_url: "https://github.com/adrian-faustino/dispatch-app",
 };
@@ -51,7 +49,7 @@ const mintbeanApp: IProject = {
   title: "GitHub Hall Of Fame",
   description: "My submission for a 4-hour mini-hackathon hosted by Mintbean.",
   vid_url: "https://www.youtube.com/embed/z1G0xFyx7Wo",
-  tech_stack: [REACT, JAVASCRIPT, CSS, BOOTSTRAP, EXPRESS],
+  tech_stack: [react, javascript, css, bootstrap, express],
   site_url: "https://mintbean-app.herokuapp.com/",
   github_url: "https://github.com/adrian-faustino/mintbean_hackathon",
 };
@@ -61,7 +59,7 @@ const portfolio_v1: IProject = {
   description:
     "My first attempt at a portfolio site using plain JS, HTML, CSS.",
   vid_url: "https://www.youtube.com/embed/imw17ohWppI",
-  tech_stack: [JAVASCRIPT, HTML, CSS],
+  tech_stack: [javascript, html, css],
   site_url: "https://adrian-faustino.herokuapp.com/",
   github_url: "https://github.com/adrian-faustino/portfolio-site",
 };
@@ -70,7 +68,7 @@ const timeboxR: IProject = {
   title: "Timebox-r",
   description: "A productivity app that combines todo-lists and timeboxing.",
   vid_url: "https://www.youtube.com/embed/Wfv3NJR55kY",
-  tech_stack: [REACT, JAVASCRIPT, CSS, EXPRESS],
+  tech_stack: [react, javascript, css, express],
   site_url: "https://timebox-r.herokuapp.com/",
   github_url: "https://github.com/adrian-faustino/time_r",
 };
@@ -80,7 +78,7 @@ const calgaryFloatingLanterns: IProject = {
   title: "Calgary Floating Lanterns",
   description: "A non-profit organization website I built using WordPress.",
   vid_url: "https://www.youtube.com/embed/tXdaKpWALsA",
-  tech_stack: [WORDPRESS, HTML, CSS],
+  tech_stack: [wordpress, html, css],
   site_url: "https://calgaryfloatinglanterns.com/",
 };
 
@@ -89,7 +87,7 @@ const araguacu: IProject = {
   description:
     "A website I made for international dance artists based in Toronto built using SquareSpace.",
   vid_url: "https://www.youtube.com/embed/GRj2ZgaHEY0",
-  tech_stack: [SQUARESPACE, HTML, CSS],
+  tech_stack: [squarespace, html, css],
   site_url: "https://www.araguacu.com/",
 };
 
