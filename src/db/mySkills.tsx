@@ -34,7 +34,7 @@ const JAVA = "Java";
 const TYPESCRIPT = "TypeScript";
 
 // use on tech with no definitive color or just have black as the logo color
-const defaultLogoColor = "var(--grays2)";
+const defaultLogoColor = "var(--grays3)";
 
 // Misc section paragraph (3rd column in SkillsView.tsx)
 export const miscParagraph =
