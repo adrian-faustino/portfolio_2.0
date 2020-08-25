@@ -11,7 +11,7 @@ const LandingView = () => {
   };
 
   return (
-    <div className="LandingView__main-container">
+    <div className="LandingView__main-container index__no-select-on-drag">
       <div onClick={handleScrollToView} className="LandingView__logo-container">
         <img
           className="LandingView__logo"
