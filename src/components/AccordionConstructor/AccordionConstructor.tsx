@@ -1,4 +1,6 @@
 import React from "react";
+/* Styles */
+import "./AccordionConstructor.css";
 /* Material UI */
 import {
   Accordion,
@@ -21,6 +23,7 @@ const AccordionConstructor: React.FC<AccordionConstructorProps> = (props) => {
 
   return (
     <Accordion
+      className="AccordionConstructor__no-margin"
       expanded={expanded === panelName}
       onChange={handleChange(panelName)}
     >

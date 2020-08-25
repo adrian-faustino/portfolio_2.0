@@ -89,4 +89,4 @@
 [x] when user selects a project, center screen to top of project section
 [x] color code tech stack on each project
 [x] replace "buttons" with chips
-[] fix accordion gap for currentstatus
+[x] fix accordion gap for currentstatus

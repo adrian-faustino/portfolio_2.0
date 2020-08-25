@@ -1,0 +1,8 @@
+.AccordionConstructor__no-margin {
+  /* OVERRIDE: Material UI */
+  margin: 0 !important;
+}
+
+.AccordionConstructor__no-margin.Mui-expanded {
+  border-top: 1px solid rgba(0, 0, 0, 0.325);
+}
