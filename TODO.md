@@ -65,7 +65,7 @@
 [x] cartoon icon instead of real avatar
 [x] divider between sections
 [x] color code tech stack on each project
-[] dl resume
+[x] dl resume
 [x] link github on each project
 
 ## Stretch
@@ -75,7 +75,7 @@
 [] TLDR version of site
 [] FAQ for employers.. "why do you want to work for us.. frankly etc"
 [] add fade/slide animation in projects view when user selects project
-[] highlight currently selected task
+[x] highlight currently selected task
 [] feedback on copied to clipboard 200
 
 ## Current task

@@ -118,7 +118,7 @@ export const html5_canvas: ISkill = {
 export const wordpress: ISkill = {
   title: WORDPRESS,
   img_path: "portfolio_2.0_assets/tech_icons/wordpress-original.svg",
-  logo_color: "#454342",
+  logo_color: defaultLogoColor,
 };
 
 export const squarespace: ISkill = {

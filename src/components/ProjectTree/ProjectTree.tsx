@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 /* Style */
 import "./ProjectTree.css";
 /* Material UI */
@@ -24,6 +24,7 @@ interface ProjectTreeProps {
 
 const RecursiveTreeView: React.FC<ProjectTreeProps> = (props) => {
   const { handleChangeProject, projectViewRef } = props;
+  const [highlightedProj, setHighlightedProj] = useState<string>("");
 
   // spread list found in myProjects.tsx
   const spreadChildren = (projects: Array<IProject>) => {
@@ -58,6 +59,9 @@ const RecursiveTreeView: React.FC<ProjectTreeProps> = (props) => {
     e.preventDefault();
     console.log("Setting current project to", projectObj.title);
     handleChangeProject(projectObj);
+
+    // set this project as highlightedProj to change its background color
+    setHighlightedProj(projectObj.title.toString());
   };
 
   const renderTree = (nodes: RenderTree) => (
@@ -71,7 +75,9 @@ const RecursiveTreeView: React.FC<ProjectTreeProps> = (props) => {
       key={nodes.id}
       nodeId={nodes.id}
       label={nodes.name}
-      className="ProjectTree__tree-item"
+      className={`ProjectTree__tree-item ${
+        nodes.name === highlightedProj && "selected"
+      }`}
     >
       {nodes.children ? nodes.children.map((node) => renderTree(node)) : null}
     </TreeItem>

@@ -9,13 +9,26 @@
   transition: all 1s;
 }
 
+/* BEGIN: On hover effects for outermost children of tree */
 .ProjectTree__tree-item {
+  /* OVERRIDE: Material UI */
+  padding: 6px 10px !important;
+}
+
+.ProjectTree__tree-item,
+.ProjectTree__tree-item * {
   text-align: left;
   background: white;
-
-  /* OVERRIDE: Material UI */
-  padding: 10px !important;
+  transition: all 0.6s;
 }
+
+/* highlight the last selected (clicked on) project */
+.ProjectTree__tree-item.selected,
+.ProjectTree__tree-item.selected * {
+  /* OVERRIDE: Material UI */
+  background: var(--secondary-color2) !important;
+}
+/* END: On hover effects for outermost children of tree */
 
 /* Tree font size */
 .ProjectTree__tree-item > * > * {

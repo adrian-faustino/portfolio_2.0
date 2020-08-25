@@ -62,11 +62,16 @@ h3 {
 }
 
 /* on hover effects */
-.hover-white-bg:hover {
-  transition: all 0.4s;
+.hover-white-bg:hover,
+.hover-grey-bg:hover {
+  transition: all 0.5s;
 }
+
 .hover-white-bg:hover {
   background: white;
+}
+.hover-grey-bg:hover {
+  background: grey;
 }
 
 /* cursor */
