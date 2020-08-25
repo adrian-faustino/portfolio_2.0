@@ -42,7 +42,7 @@ const SkillsView = () => {
 
         {/* misc column */}
         <div>
-          <h3>Misc</h3>
+          <h3 className="SkillsView__mobile-header ">Misc</h3>
           <div className="SkillsView__icon-container col-3">
             {mapSkillsJSX(MISC_SKILLS)}
 

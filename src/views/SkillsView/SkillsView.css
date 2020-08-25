@@ -53,3 +53,12 @@
     grid-gap: 20px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  /* all the column headers in mobile view */
+  .SkillsView__wrapper > div > h3 {
+    background: var(--secondary-color3);
+    padding: 5px;
+    margin-bottom: 0;
+  }
+}
