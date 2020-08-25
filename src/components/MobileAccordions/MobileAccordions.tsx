@@ -21,10 +21,10 @@ const MobileAccordions = () => {
 
   return (
     <div>
-      <h3>Personal Projects</h3>
+      <h3 className="MobileAccordions__header">Personal Projects</h3>
       {spreadProjectsJSX(PERSONAL_PROJECTS)}
 
-      <h3>Client Projects</h3>
+      <h3 className="MobileAccordions__header">Client Projects</h3>
       {spreadProjectsJSX(CLIENT_PROJECTS)}
     </div>
   );

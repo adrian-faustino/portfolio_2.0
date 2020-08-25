@@ -12,7 +12,7 @@ const ExternalLinks = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        See this site's repo
+        View this site's repo
       </a>
       {/* TODO: refactor all these a tags, DRY up code */}
       <div className="ExternalLinks__container">

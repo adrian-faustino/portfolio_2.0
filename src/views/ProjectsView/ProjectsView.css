@@ -23,6 +23,7 @@
   /* add wrapper */
   .ProjectsView__info-alert {
     width: 80vw;
-    margin: 0 auto;
+    /* move info alert UP from "Personal Projects" header, and closer to "My Projects" main header */
+    margin: -18px auto 20px auto;
   }
 }

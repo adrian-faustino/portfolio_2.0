@@ -90,3 +90,4 @@
 [x] color code tech stack on each project
 [x] replace "buttons" with chips
 [x] fix accordion gap for currentstatus
+[] landing page animation

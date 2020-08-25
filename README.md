@@ -1,4 +1,4 @@
-Link to website: https://app.netlify.com/sites/adrianfaustino/overview
+Link to website: https://adrianfaustino.netlify.app/
 
 ## Stack
 

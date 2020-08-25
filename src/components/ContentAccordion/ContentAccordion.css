@@ -1,8 +1,14 @@
+/* ensure .MobileAccordions__header class box shadow does not overlap */
+.ContentAccordion__main-container > * {
+  z-index: 3;
+}
+
 .ContentAccordion__title {
   /* OVERRIDE: Material UI */
-  font-size: 23px !important;
+  font-size: 1.1em !important;
   font-weight: 600 !important;
   color: rgba(0, 0, 0, 0.753);
+  text-align: left;
 }
 
 @media only screen and (max-width: 400px) {
