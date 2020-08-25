@@ -10,6 +10,7 @@
 .SkillsView__wrapper > div {
   /* this provides the full width white bg on each column */
   background-color: white;
+  border-radius: 0 0 50px 8px;
 }
 
 .SkillsView__icon-container {
@@ -23,6 +24,13 @@
   text-align: left;
   font-weight: 450;
   font-style: italic;
+}
+
+/* column header blue bg */
+.SkillsView__wrapper > div > h3 {
+  background: var(--secondary-color3);
+  padding: 5px;
+  margin: 0;
 }
 
 /* this breakpoint changes grid to 1 column when icons drop down 2 per row */
@@ -51,14 +59,5 @@
   .SkillsView__wrapper {
     padding: 0 20px;
     grid-gap: 20px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  /* all the column headers in mobile view */
-  .SkillsView__wrapper > div > h3 {
-    background: var(--secondary-color3);
-    padding: 5px;
-    margin-bottom: 0;
   }
 }

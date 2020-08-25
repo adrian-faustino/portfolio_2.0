@@ -38,7 +38,7 @@
 }
 /* END: On hover, display skill label */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 920px) {
   .TechIcon__skill-image {
     background: none;
   }
