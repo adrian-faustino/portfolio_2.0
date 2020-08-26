@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 /* Material UI */
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
@@ -14,7 +14,7 @@ interface MobileNavProps {
 
 const MobileNav: React.FC<MobileNavProps> = ({ jumpToSection }) => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
-  const [selectedIndex, setSelectedIndex] = useState(1);
+  const [selectedIndex, setSelectedIndex] = useState();
 
   const handleClickListItem = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
@@ -24,10 +24,6 @@ const MobileNav: React.FC<MobileNavProps> = ({ jumpToSection }) => {
     event: React.MouseEvent<HTMLElement>,
     index: number
   ) => {
-    // jump to section
-    // TODO: fix
-    // jumpToSection(SECTIONS[index].toString());
-
     setSelectedIndex(index);
     setAnchorEl(null);
   };
@@ -35,6 +31,12 @@ const MobileNav: React.FC<MobileNavProps> = ({ jumpToSection }) => {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  // jump to section
+  useEffect(() => {
+    // cannot use !selectedIndex because index 0 returns as falsey
+    !isNaN(selectedIndex) && jumpToSection(SECTIONS[selectedIndex].toString());
+  }, [selectedIndex]);
 
   return (
     <div>
@@ -45,7 +47,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ jumpToSection }) => {
           aria-controls="lock-menu"
           onClick={handleClickListItem}
         >
-          <ListItemText secondary={"Nav bar work in progress"} />
+          <ListItemText secondary={"Jump to section"} />
         </ListItem>
       </List>
       <Menu

@@ -25,7 +25,6 @@ const Nav: React.FC<NavProps> = (props) => {
     console.log("Jumping to section:", name);
     switch (name) {
       case viewIDs.ABOUT_VIEW:
-        console.log("hit!");
         return scrollToRef(homeViewRef);
       case viewIDs.PROJECTS_VIEW:
         return scrollToRef(projectsViewRef);
