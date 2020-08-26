@@ -7,6 +7,9 @@
 
   /* add orange tint over background color */
   background-color: var(--background-color);
+
+  /* remove bototm scrollbar */
+  overflow: hidden;
 }
 
 .App-logo {
