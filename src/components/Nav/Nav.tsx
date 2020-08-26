@@ -21,20 +21,32 @@ interface NavProps {
 const Nav: React.FC<NavProps> = (props) => {
   const { homeViewRef, projectsViewRef, skillsViewRef, contactViewRef } = props;
 
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const jumpToSection = (name: string) => {
+    console.log("Jumping to section:", name);
+    switch (name) {
+      case viewIDs.ABOUT_VIEW:
+        console.log("hit!");
+        return scrollToRef(homeViewRef);
+      case viewIDs.PROJECTS_VIEW:
+        return scrollToRef(projectsViewRef);
+      case viewIDs.SKILLS_VIEW:
+        return scrollToRef(skillsViewRef);
+      case viewIDs.CONTACT_VIEW:
+        return scrollToRef(contactViewRef);
+      default:
+        return console.log("Failed to match any sections.");
+    }
+  };
+
+  const handleClick = (
+    e: React.MouseEvent<HTMLElement | HTMLAnchorElement>
+  ) => {
     e.preventDefault();
+
     if (null !== contactViewRef.current) {
       // scroll to the respective ref based on the inner text which is determined by the same variable found in skeleton.tsx
-      switch (e.currentTarget.lastChild?.textContent) {
-        case viewIDs.ABOUT_VIEW:
-          return scrollToRef(homeViewRef);
-        case viewIDs.PROJECTS_VIEW:
-          return scrollToRef(projectsViewRef);
-        case viewIDs.SKILLS_VIEW:
-          return scrollToRef(skillsViewRef);
-        case viewIDs.CONTACT_VIEW:
-          return scrollToRef(contactViewRef);
-      }
+      const sectionName = e.currentTarget.lastChild?.textContent;
+      sectionName && jumpToSection(sectionName);
     }
   };
 
@@ -54,15 +66,17 @@ const Nav: React.FC<NavProps> = (props) => {
 
   return (
     <nav className="Nav__main-container">
+      {/* Desktop nav */}
       <div className="Nav__desktop hide">
         <Breadcrumbs aria-label="breadcrumb">
           {spreadNavBreadCrumbsJSX()}
         </Breadcrumbs>
       </div>
 
-      <div className="Nav__mobile hide">
-        <MobileNav />
-      </div>
+      {/* Mobile nav */}
+      {/* <div className="Nav__mobile hide">
+        <MobileNav jumpToSection={jumpToSection} />
+      </div> */}
     </nav>
   );
 };

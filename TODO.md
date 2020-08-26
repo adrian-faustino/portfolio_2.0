@@ -91,7 +91,8 @@
 [x] color code tech stack on each project
 [x] replace "buttons" with chips
 [x] fix accordion gap for currentstatus
-[] navbar
+[x] navbar
 [] landing page animation
+[] fix mobile navbar
 
 https://css-tricks.com/the-trick-to-viewport-units-on-mobile/

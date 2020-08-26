@@ -20,7 +20,7 @@ import {
 // => personal projects
 const drawmageddon: IProject = {
   title: "Drawmageddon",
-  description: "A multiplayer multilobby web browser drawing game.",
+  description: "A multilobby web browser 4-player drawing game.",
   vid_url: "https://www.youtube.com/embed/PjMwslXvpuc",
   tech_stack: [
     mongo_db,
@@ -76,7 +76,8 @@ const timeboxR: IProject = {
 // => client projects
 const calgaryFloatingLanterns: IProject = {
   title: "Calgary Floating Lanterns",
-  description: "A non-profit organization website I built using WordPress.",
+  description:
+    "A website for a non-profit organization I built using WordPress.",
   vid_url: "https://www.youtube.com/embed/tXdaKpWALsA",
   tech_stack: [wordpress, html, css],
   site_url: "https://calgaryfloatinglanterns.com/",
@@ -85,7 +86,7 @@ const calgaryFloatingLanterns: IProject = {
 const araguacu: IProject = {
   title: "Araguacu",
   description:
-    "A website I made for international dance artists based in Toronto built using SquareSpace.",
+    "A website I'm developing for international dance artists based in Toronto built using SquareSpace.",
   vid_url: "https://www.youtube.com/embed/GRj2ZgaHEY0",
   tech_stack: [squarespace, html, css],
   site_url: "https://www.araguacu.com/",

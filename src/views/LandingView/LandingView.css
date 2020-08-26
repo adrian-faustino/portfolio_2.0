@@ -4,7 +4,7 @@
   background: rgba(82, 81, 81, 0.715);
 
   /* alt+f relation: scroll to view */
-  /* margin-bottom: 4vh; */
+  margin-bottom: calc(4vh + var(--nav-height));
 
   /* center button logo */
   display: flex;

@@ -8,7 +8,11 @@ import Menu from "@material-ui/core/Menu";
 /* Constants */
 import { SECTIONS } from "../../constants/skeleton";
 
-const MobileNav = () => {
+interface MobileNavProps {
+  jumpToSection: (sectionName: string) => void;
+}
+
+const MobileNav: React.FC<MobileNavProps> = ({ jumpToSection }) => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [selectedIndex, setSelectedIndex] = useState(1);
 
@@ -20,6 +24,9 @@ const MobileNav = () => {
     event: React.MouseEvent<HTMLElement>,
     index: number
   ) => {
+    // jump to section
+    jumpToSection(SECTIONS[index].toString());
+
     setSelectedIndex(index);
     setAnchorEl(null);
   };
@@ -35,10 +42,9 @@ const MobileNav = () => {
           button
           aria-haspopup="true"
           aria-controls="lock-menu"
-          aria-label="when device is locked"
           onClick={handleClickListItem}
         >
-          <ListItemText primary={SECTIONS[selectedIndex]} />
+          <ListItemText secondary={"Jump to section"} />
         </ListItem>
       </List>
       <Menu
