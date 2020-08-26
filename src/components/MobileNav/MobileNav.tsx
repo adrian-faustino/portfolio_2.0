@@ -25,7 +25,8 @@ const MobileNav: React.FC<MobileNavProps> = ({ jumpToSection }) => {
     index: number
   ) => {
     // jump to section
-    jumpToSection(SECTIONS[index].toString());
+    // TODO: fix
+    // jumpToSection(SECTIONS[index].toString());
 
     setSelectedIndex(index);
     setAnchorEl(null);
@@ -44,7 +45,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ jumpToSection }) => {
           aria-controls="lock-menu"
           onClick={handleClickListItem}
         >
-          <ListItemText secondary={"Jump to section"} />
+          <ListItemText secondary={"Nav bar work in progress"} />
         </ListItem>
       </List>
       <Menu

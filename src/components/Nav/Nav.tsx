@@ -74,9 +74,9 @@ const Nav: React.FC<NavProps> = (props) => {
       </div>
 
       {/* Mobile nav */}
-      {/* <div className="Nav__mobile hide">
+      <div className="Nav__mobile hide">
         <MobileNav jumpToSection={jumpToSection} />
-      </div> */}
+      </div>
     </nav>
   );
 };

@@ -94,5 +94,6 @@
 [x] navbar
 [] landing page animation
 [] fix mobile navbar
+[] alt+f all TODO and address
 
 https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
