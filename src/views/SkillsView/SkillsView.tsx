@@ -21,7 +21,7 @@ const SkillsView = () => {
 
   return (
     <div>
-      <h2 className="section-title">My Skills</h2>
+      <h2 className="section-title patch">My Skills</h2>
 
       <div className="SkillsView__wrapper">
         {/* back end column */}

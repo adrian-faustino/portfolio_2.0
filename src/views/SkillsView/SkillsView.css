@@ -15,6 +15,11 @@
   height: min-content;
 }
 
+/* fix: plug the 1px gap that showed orange bg */
+.patch {
+  box-shadow: 0 0 0 1px var(--secondary-color3);
+}
+
 .SkillsView__icon-container {
   display: flex;
   justify-content: center;
