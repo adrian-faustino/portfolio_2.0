@@ -10,12 +10,12 @@
   border-radius: 5px;
   transition: all 0.4s;
   /* OVERRIDE: Material UI */
-  border: 2px solid var(--secondary-color2) !important;
+  border: 2px solid var(--secondary-color3) !important;
 }
 
 /* target font */
 .CurrentStatus__list-item > * {
-  color: var(--secondary-color2);
+  color: var(---secondary-color3);
   font-weight: 600;
 }
 
