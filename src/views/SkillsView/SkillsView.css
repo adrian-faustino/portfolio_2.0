@@ -4,6 +4,7 @@
   grid-template-columns: repeat(3, 1fr);
   padding: 0 120px;
   grid-gap: 20px;
+  min-height: 100vh;
 }
 
 /* one column */
@@ -11,6 +12,7 @@
   /* this provides the full width white bg on each column */
   background-color: white;
   border-radius: 0 0 50px 8px;
+  height: min-content;
 }
 
 .SkillsView__icon-container {

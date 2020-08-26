@@ -1,8 +1,10 @@
-.ContactView__ {
+.ContactView__main-wrapper {
   background: black;
   margin-top: 40px;
   padding: 0 0 70px 0;
   color: var(--secondary-color);
+
+  min-height: 100vh;
 }
 
 .ContactView__section-title {

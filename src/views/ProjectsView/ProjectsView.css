@@ -1,3 +1,7 @@
+.ProjectsView__main-wrapper {
+  min-height: 100vh;
+}
+
 .ProjectsView__wrapper {
   margin: 30px 0;
   position: relative;

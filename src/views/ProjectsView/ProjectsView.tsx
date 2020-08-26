@@ -27,7 +27,7 @@ const ProjectsView = () => {
   };
 
   return (
-    <section>
+    <section className="ProjectsView__main-wrapper">
       <h2 className="section-title">My Projects</h2>
 
       <Alert className="ProjectsView__info-alert" severity="info">

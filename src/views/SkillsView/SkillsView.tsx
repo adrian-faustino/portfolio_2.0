@@ -23,20 +23,20 @@ const SkillsView = () => {
     <div>
       <h2 className="section-title">My Skills</h2>
 
-      {/* front end cloumn */}
       <div className="SkillsView__wrapper">
-        <div>
-          <h3>Front End</h3>
-          <div className="SkillsView__icon-container">
-            {mapSkillsJSX(FRONT_END_TECH)}
-          </div>
-        </div>
-
         {/* back end column */}
         <div>
           <h3>Back End</h3>
           <div className="SkillsView__icon-container">
             {mapSkillsJSX(BACK_END_TECH)}
+          </div>
+        </div>
+
+        {/* front end cloumn */}
+        <div>
+          <h3>Front End</h3>
+          <div className="SkillsView__icon-container">
+            {mapSkillsJSX(FRONT_END_TECH)}
           </div>
         </div>
 
