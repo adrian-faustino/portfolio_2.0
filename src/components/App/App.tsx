@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 /* Styles */
 import "./App.css";
 /* Views */
@@ -10,20 +10,38 @@ import {
   ContactView,
 } from "../../views";
 /* Subcomponents */
-// import { Nav } from "../";
+import { Nav } from "../";
 
-function App() {
+const App = () => {
+  const homeViewRef = useRef<HTMLDivElement>(null);
+  const projectsViewRef = useRef<HTMLDivElement>(null);
+  const skillsViewRef = useRef<HTMLDivElement>(null);
+  const contactViewRef = useRef<HTMLDivElement>(null);
+
   return (
     <div className="App">
-      {/* <Nav /> */}
+      <Nav
+        homeViewRef={homeViewRef}
+        projectsViewRef={projectsViewRef}
+        skillsViewRef={skillsViewRef}
+        contactViewRef={contactViewRef}
+      />
 
       <LandingView />
-      <HomeView />
-      <ProjectsView />
-      <SkillsView />
-      <ContactView />
+      <div ref={homeViewRef}>
+        <HomeView />
+      </div>
+      <div ref={projectsViewRef}>
+        <ProjectsView />
+      </div>
+      <div ref={skillsViewRef}>
+        <SkillsView />
+      </div>
+      <div ref={contactViewRef}>
+        <ContactView />
+      </div>
     </div>
   );
-}
+};
 
 export default App;

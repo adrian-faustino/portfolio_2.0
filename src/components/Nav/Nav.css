@@ -1,53 +1,7 @@
-.Nav {
+.Nav__main-container > * {
   width: 100vw;
   position: fixed;
   top: 0;
   height: var(--nav-height);
   z-index: 30;
-  /* background: linear-gradient(
-    rgba(0, 0, 0, 0.961),
-    rgba(101, 97, 97, 0.872),
-    rgba(255, 255, 255, 0.859),
-    rgba(255, 255, 255, 0.681),
-    rgba(255, 255, 255, 0.29)
-  );
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.664); */
 }
-
-.Nav__links-container {
-  display: contents;
-  list-style-type: none;
-}
-
-.Nav__links-container > li {
-  display: inline-block;
-  margin: 15px 20px;
-  padding: 8px 19px;
-
-  transition: all 0.4s;
-  background: var(--base-color4);
-
-  /* fonts */
-  color: white;
-  font-weight: bold;
-
-  border-radius: 5px;
-  box-shadow: 0 0 4px black;
-}
-
-.Nav__links-container > li:hover {
-  background: white;
-  color: black;
-  cursor: pointer;
-}
-
-.Nav__links-container > li::before,
-.Nav__links-container > li::after {
-  content: "";
-}
-
-/* .Nav__underline {
-  width: 60%;
-  border: 1px solid var(--grays);
-  box-shadow: 0 0 2px var(--grays2);
-} */

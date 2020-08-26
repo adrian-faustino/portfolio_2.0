@@ -2,54 +2,59 @@ import React from "react";
 /* Styles */
 import "./Nav.css";
 /* Material UI */
-// import {
-//   AppBar,
-//   Toolbar,
-//   IconButton,
-//   Typography,
-//   Button,
-// } from "@material-ui/core";
-// import MenuIcon from "@material-ui/icons/Menu";
+import Breadcrumbs from "@material-ui/core/Breadcrumbs";
+import Link from "@material-ui/core/Link";
+/* Constants */
+import { SECTIONS, viewIDs } from "../../constants/skeleton";
+/* Util */
+import { scrollToRef } from "../../util";
 
-const Nav = () => {
+interface NavProps {
+  homeViewRef: React.RefObject<HTMLDivElement>;
+  projectsViewRef: React.RefObject<HTMLDivElement>;
+  skillsViewRef: React.RefObject<HTMLDivElement>;
+  contactViewRef: React.RefObject<HTMLDivElement>;
+}
+
+const Nav: React.FC<NavProps> = (props) => {
+  const { homeViewRef, projectsViewRef, skillsViewRef, contactViewRef } = props;
+
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    if (null !== contactViewRef.current) {
+      // scroll to the respective ref based on the inner text which is determined by the same variable found in skeleton.tsx
+      switch (e.currentTarget.lastChild?.textContent) {
+        case viewIDs.ABOUT_VIEW:
+          return scrollToRef(homeViewRef);
+        case viewIDs.PROJECTS_VIEW:
+          return scrollToRef(projectsViewRef);
+        case viewIDs.SKILLS_VIEW:
+          return scrollToRef(skillsViewRef);
+        case viewIDs.CONTACT_VIEW:
+          return scrollToRef(contactViewRef);
+      }
+    }
+  };
+
+  const spreadNavBreadCrumbsJSX = () => {
+    return SECTIONS.map((sectionName, i) => (
+      <Link
+        key={`${sectionName}-${i}-nav`}
+        color="inherit"
+        onClick={handleClick}
+        className="Nav__link"
+      >
+        {sectionName}
+      </Link>
+    ));
+  };
+
   return (
-    <div className="Nav">
-      {/* <ul className="Nav__links-container">
-        <li>
-          <a>Home</a>
-        </li>
-        <li>
-          <a>Projects</a>
-        </li>
-        <li>
-          <a>Skills</a>
-        </li>
-        <li>
-          <a>Contact</a>
-        </li>
-      </ul> */}
-
-      {/* <hr className="Nav__underline" /> */}
-
-      {/* <AppBar position="static">
-        <Toolbar>
-          <IconButton
-            edge="start"
-            // className={classes.menuButton}
-            color="inherit"
-            aria-label="menu"
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography
-            variant="h6"
-            // className={classes.title}
-          >
-            News
-          </Typography>
-        </Toolbar>
-      </AppBar> */}
-    </div>
+    <nav className="Nav__main-container">
+      <Breadcrumbs aria-label="breadcrumb">
+        {spreadNavBreadCrumbsJSX()}
+      </Breadcrumbs>
+    </nav>
   );
 };
 
