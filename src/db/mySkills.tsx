@@ -41,8 +41,6 @@ export const miscParagraph =
   "I'm also familiar with SPA development, RESTfulAPI, OOP, unit testing, end-to-end testing, ES6, AJAX, DRY code, CRUD operations, CMS, REGEX, BEM, JSON, Emmet, and am getting pretty good at remembering an ungodly amount of acronyms.";
 
 // skills
-// TODO: add img path to every obj
-
 export const javascript: ISkill = {
   title: JAVASCRIPT,
   img_path: "portfolio_2.0_assets/tech_icons/javascript-original.svg",

@@ -7,7 +7,6 @@ export interface IProject {
   github_url?: String;
 }
 
-// todo: add img paths
 export interface ISkill {
   title: String;
   img_path: String;

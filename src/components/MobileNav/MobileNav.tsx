@@ -60,7 +60,6 @@ const MobileNav: React.FC<MobileNavProps> = ({ jumpToSection }) => {
         {SECTIONS.map((option, index) => (
           <MenuItem
             key={option.toString()}
-            selected={index === selectedIndex}
             onClick={(event) => handleMenuItemClick(event, index)}
           >
             {option}
