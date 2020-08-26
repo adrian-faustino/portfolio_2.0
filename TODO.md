@@ -57,7 +57,7 @@
 [] contact form
 [x] contact bg black? (footer)
 [x] section title bg white? (breaker/spacer)
-[] implement Material UI nav
+[x] implement Material UI nav
 [x] stats section (homeview)
 [] add nav bar with logo
 [x] icon on hover -> expand and show title
@@ -95,5 +95,5 @@
 [] landing page animation
 [x] fix mobile navbar
 [] alt+f all TODO and address
-
+[] contact form
 https://css-tricks.com/the-trick-to-viewport-units-on-mobile/

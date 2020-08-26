@@ -14,6 +14,20 @@
 .Nav__link {
   cursor: pointer;
   display: block;
+  font-weight: bold;
+}
+
+.Nav__link::before,
+.Nav__link::after {
+  content: "";
+  /* position: absolute; */
+  height: 2px;
+  width: 100%;
+  background: black;
+}
+
+.Nav__link:hover {
+  color: black;
 }
 
 @media only screen and (max-width: 600px) {

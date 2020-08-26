@@ -5,6 +5,8 @@ import "./ContactView.css";
 import { LOCATION, EMAIL, MOBILE_NUMBER } from "../../db/myAboutMe";
 /* npm */
 import CopyToClipboard from "react-copy-to-clipboard";
+/* Subcomponents */
+// import { ContactForm } from "../../components";
 
 const ContactView = () => {
   return (
@@ -53,6 +55,8 @@ const ContactView = () => {
           </div>
         </CopyToClipboard>
       </address>
+
+      {/* <ContactForm /> */}
     </section>
   );
 };

@@ -9,3 +9,4 @@ export { default as ProjectTree } from "./ProjectTree/ProjectTree";
 export { default as TechIcon } from "./TechIcon/TechIcon";
 export { default as MobileAccordions } from "./MobileAccordions/MobileAccordions";
 export { default as MobileNav } from "./MobileNav/MobileNav";
+export { default as ContactForm } from "./ContactForm/ContactForm";
