@@ -34,9 +34,10 @@ const MobileNav: React.FC<MobileNavProps> = ({ jumpToSection }) => {
 
   // jump to section
   useEffect(() => {
+    console.log("Triggering effect.");
     // cannot use !selectedIndex because index 0 returns as falsey
     !isNaN(selectedIndex) && jumpToSection(SECTIONS[selectedIndex].toString());
-  }, [selectedIndex]);
+  }, [selectedIndex, jumpToSection]);
 
   return (
     <div>
