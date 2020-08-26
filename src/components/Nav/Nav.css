@@ -15,20 +15,39 @@
   cursor: pointer;
   display: block;
   font-weight: bold;
-}
 
-.Nav__link::before,
-.Nav__link::after {
-  content: "";
-  /* position: absolute; */
-  height: 2px;
-  width: 100%;
-  background: black;
+  position: relative;
 }
 
 .Nav__link:hover {
   color: black;
 }
+
+/* BEGIN: Navbar on hover outer lines animation */
+.Nav__link::before,
+.Nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: var(--secondary-color2);
+  transition: all 0.5s;
+  /* on hover, expand this to create illusion */
+  transform: scale(0);
+  transform-origin: right;
+}
+.Nav__link::after {
+  transform-origin: center;
+  bottom: 0;
+}
+
+.Nav__link:hover::before,
+.Nav__link:hover::after {
+  transform: scale(1);
+}
+
+/* END: Navbar on hover outer lines animation */
 
 @media only screen and (max-width: 600px) {
   /* show mobile nav */
