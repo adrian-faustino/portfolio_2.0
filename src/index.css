@@ -41,7 +41,7 @@ code {
   --secondary-color3: #5fabd6;
   --grays: #ada7a7;
   --grays2: #d3d3cb;
-  --grays3: #595959;
+  --grays3: #6d6d6d;
 
   /* offsets */
   --nav-height: 90px;
@@ -87,6 +87,15 @@ h3 {
   font-size: 20px;
 }
 
+.section-title {
+  background: var(--secondary-color3);
+  width: 100%;
+  padding: 20px 0;
+
+  font-size: var(--section-title);
+  font-weight: bold;
+}
+
 /* remove highighting on drag */
 /* source: https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting */
 .index__no-select-on-drag {
@@ -98,15 +107,6 @@ h3 {
   user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
   -webkit-tap-highlight-color: transparent;
-}
-
-.section-title {
-  background: rgba(255, 255, 255, 0.331);
-  width: 100%;
-  padding: 20px 0;
-
-  font-size: var(--section-title);
-  font-weight: bold;
 }
 
 /* BEGIN: mobile hide/show  */

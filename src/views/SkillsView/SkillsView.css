@@ -28,7 +28,7 @@
 
 /* column header blue bg */
 .SkillsView__wrapper > div > h3 {
-  background: var(--secondary-color3);
+  background: var(--grays3);
   padding: 5px;
   margin: 0;
 }

@@ -13,4 +13,4 @@ export const CURRENTLY_REVIEWING: Array<String> = [
   "Responsive Design",
 ];
 
-export const LEARNING_NEXT: Array<String> = ["React Native", "BEM"];
+export const LEARNING_NEXT: Array<String> = ["React Native", "BEM", "GraphQL"];

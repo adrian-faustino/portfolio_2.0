@@ -91,3 +91,5 @@
 [x] replace "buttons" with chips
 [x] fix accordion gap for currentstatus
 [] landing page animation
+
+https://css-tricks.com/the-trick-to-viewport-units-on-mobile/

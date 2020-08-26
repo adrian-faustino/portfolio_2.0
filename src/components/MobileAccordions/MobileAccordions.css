@@ -2,7 +2,7 @@
 .MobileAccordions__header {
   position: relative;
   top: -2px;
-  --mobile-header-bg-color: var(--secondary-color3);
+  --mobile-header-bg-color: var(--grays3);
   background: var(--mobile-header-bg-color);
   box-shadow: 0 0 0 11px var(--mobile-header-bg-color);
 }
