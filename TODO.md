@@ -67,6 +67,7 @@
 [x] color code tech stack on each project
 [x] dl resume
 [x] link github on each project
+[] more detailed about me
 
 ## Stretch
 
@@ -90,6 +91,7 @@
 [x] color code tech stack on each project
 [x] replace "buttons" with chips
 [x] fix accordion gap for currentstatus
+[] navbar
 [] landing page animation
 
 https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
