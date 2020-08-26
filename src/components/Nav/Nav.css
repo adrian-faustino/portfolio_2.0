@@ -1,7 +1,11 @@
-.Nav__main-container > * {
+.Nav__main-container {
   width: 100vw;
   position: fixed;
   top: 0;
-  height: var(--nav-height);
+  /* height: var(--nav-height); */
   z-index: 30;
+  display: grid;
+  justify-content: center;
+
+  background: white;
 }
