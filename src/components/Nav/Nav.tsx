@@ -41,6 +41,7 @@ const Nav: React.FC<NavProps> = (props) => {
       <Link
         key={`${sectionName}-${i}-nav`}
         color="inherit"
+        underline="none"
         onClick={handleClick}
         className="Nav__link"
       >
