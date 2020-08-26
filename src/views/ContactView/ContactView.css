@@ -4,7 +4,8 @@
   padding: 0 0 70px 0;
   color: var(--secondary-color);
 
-  min-height: 100vh;
+  /* ensure that completely scrolling down will have a flush black bg section */
+  height: calc(100vh - (calc(var(--nav-height) + var(--section-title) * 2)));
 }
 
 .ContactView__section-title {
