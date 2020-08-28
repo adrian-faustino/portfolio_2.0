@@ -1,5 +1,5 @@
 // These are displayed on the landing page HomeView.tsx
-export const EMPLOYMENT_STATUS: Array<String> = ["Open to Opportunities"];
+export const EMPLOYMENT_STATUS: Array<String> = ["Actively Searching"];
 
 export const CURRENTLY_LEARNING: Array<String> = ["PixiJS"];
 
