@@ -91,6 +91,7 @@ const RecursiveTreeView: React.FC<ProjectTreeProps> = (props) => {
       className="ProjectTree__tree-container"
       defaultCollapseIcon={<ExpandMore />}
       defaultExpandIcon={<ChevronRight />}
+      defaultExpanded={["root"]}
     >
       {renderTree(data)}
     </TreeView>

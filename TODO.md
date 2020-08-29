@@ -68,6 +68,7 @@
 [x] dl resume
 [x] link github on each project
 [] more detailed about me
+[] link resume.JSON to db (make json file source of truth)
 
 ## Stretch
 
