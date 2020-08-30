@@ -59,7 +59,7 @@ const mintbeanApp: IProject = {
 };
 
 const portfolio_v1: IProject = {
-  title: "Portfolio v1.0",
+  title: "Portfolio Site v1",
   description:
     "My first attempt at a portfolio site using plain JS, HTML, CSS.",
   vid_url: "https://www.youtube.com/embed/imw17ohWppI",
@@ -78,7 +78,7 @@ const timeboxR: IProject = {
 };
 
 const portfolio_v2: IProject = {
-  title: "Portfolio v2.0",
+  title: "Portfolio Site v2",
   description:
     "Utilizing TypeScript to create an app that extracts data from a single JSON file and turn it into a portfolio site (the site you're currently browsing!).",
   vid_url: "https://www.youtube.com/embed/TQ6WkiYA5-0",
