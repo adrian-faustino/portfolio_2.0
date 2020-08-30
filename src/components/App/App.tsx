@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import "./App.css";
 /* Views */
 import {
-  LandingView,
+  // LandingView,
   HomeView,
   ProjectsView,
   SkillsView,
