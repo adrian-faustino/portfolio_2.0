@@ -3,7 +3,7 @@ export interface IProject {
   description: String;
   vid_url: String;
   tech_stack: Array<ISkill>;
-  site_url: String;
+  site_url?: String;
   github_url?: String;
 }
 

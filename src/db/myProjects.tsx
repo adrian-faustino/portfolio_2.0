@@ -77,7 +77,6 @@ const timeboxR: IProject = {
   github_url: "https://github.com/adrian-faustino/time_r",
 };
 
-// TODO: Add portfolio v2
 const portfolio_v2: IProject = {
   title: "Portfolio v2.0",
   description:
@@ -87,7 +86,7 @@ const portfolio_v2: IProject = {
   site_url: "https://adrianfaustino.netlify.app/",
   github_url: "https://github.com/adrian-faustino/portfolio_2.0",
 };
-// TODO: Add habit_book
+
 const habit_book: IProject = {
   title: "HabitBook",
   description:
@@ -103,7 +102,6 @@ const habit_book: IProject = {
     css,
     bootstrap,
   ],
-  site_url: "https://github.com/adrian-faustino/habit_book",
   github_url: "https://github.com/adrian-faustino/habit_book",
 };
 

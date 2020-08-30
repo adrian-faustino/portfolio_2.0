@@ -93,14 +93,16 @@ const Project: React.FC<ProjectProps> = (props) => {
 
         <div className="Project__links-container">
           {/* link to site */}
-          <a
-            className="Project__visit-site-link"
-            href={site_url.toString()}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Visit Site
-          </a>
+          {site_url && (
+            <a
+              className="Project__visit-site-link"
+              href={site_url.toString()}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit Site
+            </a>
+          )}
 
           {/* link to GitHub */}
           {github_url && (
