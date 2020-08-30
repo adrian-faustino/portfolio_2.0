@@ -24,7 +24,7 @@ import {
 const drawmageddon: IProject = {
   title: "Drawmageddon",
   description:
-    "A 4-player multilobby web browser drawing game utilizing web sockets to sync each unique game instance.",
+    "A 4-player multi-lobby web browser drawing game using web sockets to sync each unique game instance. Each player draws a quadrant of an image. At the end of each round the game puts together each section and animates how each player drew their section.",
   vid_url: "https://www.youtube.com/embed/PjMwslXvpuc",
   tech_stack: [
     mongo_db,
