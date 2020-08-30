@@ -27,7 +27,7 @@ const App = () => {
         contactViewRef={contactViewRef}
       />
 
-      <LandingView />
+      {/* <LandingView /> */}
       <div ref={homeViewRef}>
         <HomeView />
       </div>

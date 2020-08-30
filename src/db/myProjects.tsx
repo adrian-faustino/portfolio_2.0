@@ -37,7 +37,7 @@ const drawmageddon: IProject = {
     css,
   ],
   site_url: "https://draw-mageddon.herokuapp.com/",
-  github_url: "https://github.com/adrian-faustino/draw-mageddon",
+  github_url: "https://github.com/adrian-faustino/LHL-final-project",
 };
 
 const dispatchScheduler: IProject = {

@@ -3,7 +3,7 @@
 
   /* offset by nav height */
   position: relative;
-  bottom: var(--nav-height);
+  /* bottom: var(--nav-height); */
 
   /* add orange tint over background color */
   background-color: var(--background-color);

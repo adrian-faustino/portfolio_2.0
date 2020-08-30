@@ -1,11 +1,12 @@
 .ContactView__main-wrapper {
   background: black;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   padding: 0 0 70px 0;
   color: var(--secondary-color);
 
   /* ensure that completely scrolling down will have a flush black bg section */
-  height: calc(100vh - (calc(var(--nav-height) + var(--section-title) * 2)));
+  /* height: calc(100vh - (calc(var(--nav-height) + var(--section-title) * 2))); */
+  height: 100vh;
 }
 
 .ContactView__section-title {
@@ -56,6 +57,12 @@
 }
 
 @media only screen and (max-width: 400px) {
+  .ContactView__main-wrapper {
+    /* // ensure contact section fills whole view on jump */
+    height: calc(96vh - var(--nav-height));
+  }
+
+  /* the icons on each line */
   .ContactView__info-container > * > img {
     height: 30px;
     width: 30px;
