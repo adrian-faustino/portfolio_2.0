@@ -43,13 +43,13 @@ const RecursiveTreeView: React.FC<ProjectTreeProps> = (props) => {
     children: [
       {
         id: "1",
-        name: "Personal",
-        children: spreadChildren(PERSONAL_PROJECTS),
+        name: "Client",
+        children: spreadChildren(CLIENT_PROJECTS),
       },
       {
         id: "2",
-        name: "Client",
-        children: spreadChildren(CLIENT_PROJECTS),
+        name: "Personal",
+        children: spreadChildren(PERSONAL_PROJECTS),
       },
     ],
   };

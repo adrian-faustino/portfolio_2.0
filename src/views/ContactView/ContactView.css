@@ -5,12 +5,13 @@
   color: var(--secondary-color);
 
   /* ensure that completely scrolling down will have a flush black bg section */
-  /* height: calc(100vh - (calc(var(--nav-height) + var(--section-title) * 2))); */
-  height: 100vh;
+  height: calc(100vh - (calc(var(--nav-height) + var(--section-title))));
+  /* height: 100vh; */
 }
 
 .ContactView__section-title {
   background: black;
+  box-shadow: 0 0 0 5px black;
 }
 
 .ContactView__info-container {

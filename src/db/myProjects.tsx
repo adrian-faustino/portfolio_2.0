@@ -125,10 +125,10 @@ const araguacu: IProject = {
 };
 
 export const PERSONAL_PROJECTS: Array<IProject> = [
-  habit_book,
-  portfolio_v2,
   drawmageddon,
+  habit_book,
   dispatchScheduler,
+  portfolio_v2,
   mintbeanApp,
   timeboxR,
   portfolio_v1,
