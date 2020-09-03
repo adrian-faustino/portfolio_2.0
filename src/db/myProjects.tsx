@@ -124,7 +124,18 @@ const araguacu: IProject = {
   site_url: "https://www.araguacu.com/",
 };
 
+const timetracker_lite = {
+  title: "Time Tracker lite",
+  description:
+    "An app that helps the user track the time they are spending on daily tasks. The total amount of time spent each day is displayed at the bottom and the total amount of time for the whole week is displayed on the dashboard. Users are able to tag each task under an existing project and the app will highlight the task with the project color to help visually identify tasks of the same project.",
+  vid_url: "https://www.youtube.com/embed/nK_7n10Jsyo",
+  tech_stack: [typescript, react, redux, javascript, css],
+  github_url: "https://github.com/adrian-faustino/timetracker-lite",
+  site_url: "https://timetracker-lite.netlify.app/",
+};
+
 export const PERSONAL_PROJECTS: Array<IProject> = [
+  timetracker_lite,
   drawmageddon,
   habit_book,
   dispatchScheduler,

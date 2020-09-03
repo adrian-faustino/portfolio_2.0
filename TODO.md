@@ -98,3 +98,4 @@
 [] alt+f all TODO and address
 [] contact form
 https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
+[] put 3 dl buttons on navbar too (dl resume, linked in, git)
